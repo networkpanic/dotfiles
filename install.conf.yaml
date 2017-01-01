@@ -29,6 +29,7 @@
 - shell:
   - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
+  - [git submodule update --init --remote, Updating submodules]
   - command: ./powerline-fonts/install.sh
     stdin: true
     stdout: true
