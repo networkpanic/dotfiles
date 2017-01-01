@@ -3,7 +3,9 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean:
+  - '~'
+  - '~/.config'
 
 - link:
     ~/.bash_profile: bash_profile
@@ -15,6 +17,24 @@
       force: true
       relink: true
       path: oh-my-zsh/
+    ~/.config/mpd:
+      create: yes
+      path: config/mpd
+    ~/.ncmpcpp/config:
+      create: yes
+      path: ncmpcpp.conf
+    ~/.gnupg/gpg.conf: gpg.conf
+    ~/.gnupg/gpg-agent.conf: gpg-agent.conf
 
 - shell:
+  - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
+  - command: ./powerline-fonts/install.sh
+    stdin: true
+    stdout: true
+  - mkdir -p ~/.mpd
+  - mkdir -p ~/.mpd/playlists
+  - touch ~/.mpd/mpd.db
+  - touch ~/.mpd/mpd.log
+  - touch ~/.mpd/mpd.pid
+  - touch ~/.mpd/mpdstate
