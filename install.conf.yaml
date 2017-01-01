@@ -10,32 +10,21 @@
 
 - link:
     ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.zshrc: zshrc
+    ~/.bashrc: rc/bashrc
+    ~/.zshrc: rc/zshrc
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.oh-my-zsh:
       force: true
       relink: true
       path: oh-my-zsh/
-    ~/.config/mpd:
-      create: yes
-      path: config/mpd
-    ~/.config/ranger:
-      create: yes
-      path: config/ranger
-    ~/.config/neofetch:
-      create: yes
-      path: config/neofetch
-    ~/.config/xfce4:
-      create: yes
-      path: config/xfce4
-    ~/.ncmpcpp/config:
-      create: yes
-      path: ncmpcpp.conf
-    ~/.gnupg/gpg.conf: gpg.conf
-    ~/.gnupg/gpg-agent.conf: gpg-agent.conf
-    ~/.tmux.conf: tmux.conf
+    ~/.config/mpd: config/mpd
+    ~/.config/ranger: config/ranger
+    ~/.config/neofetch: config/neofetch
+    ~/.ncmpcpp/config: config/ncmpcpp.conf
+    ~/.gnupg/gpg.conf: config/gpg.conf
+    ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
+    ~/.tmux.conf: config/tmux.conf
 
 - shell:
   - [git pull origin master, Updating repo]
@@ -45,6 +34,8 @@
     stdin: true
     stdout: true
   - command: ./install -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
+    stdin: true
+    stdout: true
   - mkdir -p ~/.mpd
   - mkdir -p ~/.mpd/playlists
   - touch ~/.mpd/mpd.db
