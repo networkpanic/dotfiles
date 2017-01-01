@@ -24,6 +24,12 @@
     ~/.config/ranger:
       create: yes
       path: config/ranger
+    ~/.config/neofetch:
+      create: yes
+      path: config/neofetch
+    ~/.config/xfce4:
+      create: yes
+      path: config/xfce4
     ~/.ncmpcpp/config:
       create: yes
       path: ncmpcpp.conf
