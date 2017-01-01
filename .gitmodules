@@ -10,3 +10,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "nanorc"]
+	path = nanorc
+	url = https://github.com/nanorc/nanorc.git
