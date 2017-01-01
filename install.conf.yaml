@@ -7,6 +7,8 @@
   - '~'
   - '~/.config'
   - '~/.gnupg'
+- shell:
+  - ["make -C nanorc", "Setting up nanorc"]
 
 - link:
     ~/.bash_profile: bash_profile
@@ -18,6 +20,9 @@
       force: true
       relink: true
       path: oh-my-zsh/
+    ~/.nanorc:
+      force: true
+      path: nanorc/build/ALL.nanorc
     ~/.config/mpd: config/mpd
     ~/.config/ranger: config/ranger
     ~/.config/neofetch: config/neofetch
