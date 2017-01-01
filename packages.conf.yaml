@@ -1,0 +1,6 @@
+- yaourt:
+  - vim
+  - zsh
+  - tmux
+  - htop
+  - powerline
