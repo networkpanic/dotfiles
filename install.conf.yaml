@@ -20,6 +20,10 @@
       force: true
       relink: true
       path: oh-my-zsh/
+    ~/.zsh_custom:
+      force: true
+      relink: true
+      path: rc/zsh_custom/
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
