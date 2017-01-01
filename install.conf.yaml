@@ -24,6 +24,14 @@
       force: true
       relink: true
       path: rc/zsh_custom/
+    ~/.config/xfce4/panel:
+      force: true
+      relink: true
+      path: config/xfce4/panel
+    ~/.config/xfce4/terminal:
+      force: true
+      relink: true
+      path: config/xfce4/terminal
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
@@ -34,6 +42,7 @@
     ~/.gnupg/gpg.conf: config/gpg.conf
     ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
     ~/.tmux.conf: config/tmux.conf
+    ~/.Xresources: Xresources
 
 - shell:
   - [git pull origin master, Updating repo]
