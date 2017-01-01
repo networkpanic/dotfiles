@@ -1,8 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.oh-my-zsh:
+      force: true
+      relink: true
+      path: oh-my-zsh/
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
