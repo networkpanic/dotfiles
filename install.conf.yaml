@@ -25,6 +25,7 @@
       path: ncmpcpp.conf
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.gnupg/gpg-agent.conf: gpg-agent.conf
+    ~/.tmux.conf: tmux.conf
 
 - shell:
   - [git pull origin master, Updating repo]
