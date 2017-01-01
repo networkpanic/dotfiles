@@ -21,6 +21,9 @@
     ~/.config/mpd:
       create: yes
       path: config/mpd
+    ~/.config/ranger:
+      create: yes
+      path: config/ranger
     ~/.ncmpcpp/config:
       create: yes
       path: ncmpcpp.conf
