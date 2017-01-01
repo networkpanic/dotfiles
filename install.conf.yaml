@@ -6,6 +6,7 @@
 - clean:
   - '~'
   - '~/.config'
+  - '~/.gnupg'
 
 - link:
     ~/.bash_profile: bash_profile
@@ -31,9 +32,10 @@
   - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
   - [git submodule update --init --remote, Updating submodules]
-  - command: ./powerline-fonts/install.sh
+  - command: ./fonts/install.sh
     stdin: true
     stdout: true
+  - command: ./install -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
   - mkdir -p ~/.mpd
   - mkdir -p ~/.mpd/playlists
   - touch ~/.mpd/mpd.db
