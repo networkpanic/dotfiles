@@ -8,8 +8,10 @@
   - '~'
   - '~/.config'
   - '~/.gnupg'
+  - '~/.vim'
 
 - shell:
+  - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
   - ["make -C nanorc", "Setting up nanorc"]
 
@@ -46,14 +48,22 @@
     ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
     ~/.tmux.conf: config/tmux.conf
     ~/.Xresources: Xresources
+    ~/.vim:
+      force: true
+      relink: true
+      path: vim/
+    ~/.vimrc: config/vimrc
+
 
 - shell:
-  - [git pull origin master, Updating repo]
   - [git submodule update --init --remote, Updating submodules]
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
   - command: ./install -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
+    stdin: true
+    stdout: true
+  - command: vim +PluginInstall +qall
     stdin: true
     stdout: true
   - mkdir -p ~/.mpd

@@ -84,6 +84,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="ls --color=auto --group-directories-first"
-alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png $
-
+alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
 

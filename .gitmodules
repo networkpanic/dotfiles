@@ -16,3 +16,6 @@
 [submodule "dotbot-apt-get"]
 	path = dotbot-apt-get
 	url = https://github.com/rubenvereecken/dotbot-apt-get
+[submodule "vim/Vundle.vim"]
+	path = vim/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
