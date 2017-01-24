@@ -8,7 +8,7 @@
   - '~'
   - '~/.config'
   - '~/.gnupg'
-  - '~/.vim'
+
 
 - shell:
   - [git pull origin master, Updating repo]
@@ -58,9 +58,6 @@
 - shell:
   - [git submodule update --init --remote, Updating submodules]
   - command: ./fonts/install.sh
-    stdin: true
-    stdout: true
-  - command: vim +PluginInstall +qall
     stdin: true
     stdout: true
   - mkdir -p ~/.mpd

@@ -63,9 +63,6 @@
   - command: ./install -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
     stdin: true
     stdout: true
-  - command: vim +PluginInstall +qall
-    stdin: true
-    stdout: true
   - mkdir -p ~/.mpd
   - mkdir -p ~/.mpd/playlists
   - touch ~/.mpd/mpd.db
