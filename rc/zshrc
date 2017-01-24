@@ -83,9 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='ls --color=auto --group-directories-first'
+alias ls="ls --color=auto --group-directories-first"
+alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png $
 
 
-case $- in *i*)
-    [ -z "$TMUX" ] && exec tmux
-esac
