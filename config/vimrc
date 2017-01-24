@@ -1,0 +1,70 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'jnurmine/Zenburn'
+Bundle 'ctrlpvim/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+" colorschemes
+Plugin 'tomasr/molokai'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+set backspace=indent,eol,start
+
+set showcmd
+set incsearch
+set number
+set expandtab
+set tabstop=2
+"set nowrap
+set shiftwidth=2
+set hlsearch
+set ic
+set autoindent
+set copyindent
+set cmdheight=1
+set smartcase
+set smarttab
+set ignorecase
+set incsearch
+set encoding=utf-8
+
+set history=1000
+set undolevels=1000
+
+let python_highlight_all=1
+syntax on
+set laststatus=2
+
+set pastetoggle=<F2>
+
+set noswapfile
+set showmatch
+
+set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+nnoremap ; :
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+let g:rehash256=1
+
+let g:molokai_original=1
+colorscheme molokai
+set background=dark
+let base16colorspace=256
+
+
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+highlight Normal guibg=black guifg=white
+highlight Normal ctermbg=none
