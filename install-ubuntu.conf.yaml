@@ -1,0 +1,61 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+  - '~'
+  - '~/.config'
+  - '~/.gnupg'
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - ["make -C nanorc", "Setting up nanorc"]
+
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: rc/bashrc
+    ~/.zshrc: rc/zshrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.oh-my-zsh:
+      force: true
+      relink: true
+      path: oh-my-zsh/
+    ~/.zsh_custom:
+      force: true
+      relink: true
+      path: rc/zsh_custom/
+    ~/.config/xfce4/panel:
+      force: true
+      relink: true
+      path: config/xfce4/panel
+    ~/.config/xfce4/terminal:
+      force: true
+      relink: true
+      path: config/xfce4/terminal
+    ~/.nanorc:
+      force: true
+      path: nanorc/build/ALL.nanorc
+    ~/.config/mpd: config/mpd
+    ~/.config/ranger: config/ranger
+    ~/.config/neofetch: config/neofetch
+    ~/.ncmpcpp/config: config/ncmpcpp.conf
+    ~/.gnupg/gpg.conf: config/gpg.conf
+    ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
+    ~/.tmux.conf: config/tmux.conf
+    ~/.Xresources: Xresources
+
+- shell:
+  - [git pull origin master, Updating repo]
+  - [git submodule update --init --remote, Updating submodules]
+  - command: ./fonts/install.sh
+    stdin: true
+    stdout: true
+  - mkdir -p ~/.mpd
+  - mkdir -p ~/.mpd/playlists
+  - touch ~/.mpd/mpd.db
+  - touch ~/.mpd/mpd.log
+  - touch ~/.mpd/mpd.pid
+  - touch ~/.mpd/mpdstate
