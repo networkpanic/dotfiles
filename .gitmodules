@@ -13,3 +13,6 @@
 [submodule "nanorc"]
 	path = nanorc
 	url = https://github.com/nanorc/nanorc.git
+[submodule "dotbot-apt-get"]
+	path = dotbot-apt-get
+	url = https://github.com/rubenvereecken/dotbot-apt-get
