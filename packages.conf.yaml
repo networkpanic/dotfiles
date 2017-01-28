@@ -1,5 +1,6 @@
 - yaourt:
   - vim
+  - vim-molokai
   - zsh
   - tmux
   - htop

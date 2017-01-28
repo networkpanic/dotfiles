@@ -36,7 +36,7 @@
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
-    ~/.mpd: config/mpd
+    ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.config/ranger: config/ranger
     ~/.config/neofetch: config/neofetch
     ~/.ncmpcpp/config: config/ncmpcpp.conf
@@ -47,21 +47,18 @@
     ~/.vim:
       force: true
       relink: true
-      path: vim/
+      path: vim
     ~/.vimrc: config/vimrc
 
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
+  - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
+  - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
   - command: ./install-archlinux -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
     stdin: true
     stdout: true
-  - mkdir -p ~/.mpd
-  - mkdir -p ~/.mpd/playlists
-  - touch ~/.mpd/mpd.db
-  - touch ~/.mpd/mpd.log
-  - touch ~/.mpd/mpd.pid
-  - touch ~/.mpd/mpdstate
+  - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
