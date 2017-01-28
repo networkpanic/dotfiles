@@ -7,3 +7,13 @@
   - scrot
   - xclip
   - atom
+
+- aptget:
+  - vim
+  - vim-molokai
+  - zsh
+  - tmux
+  - htop
+  - scrot
+  - xclip
+  - atom
