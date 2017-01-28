@@ -7,16 +7,14 @@ This is a repository of dotfiles, managed with  [Dotbot][dotbot].
 
 
 
+
 Installation
 -----------
+**ubuntu is untested!**
 
 cd ~/ && git clone git@github.com:acidhunter/dotfiles.git && cd dotfiles
 
 ./install [arch|ubuntu]
-
-
-
-
 
 
 
