@@ -9,6 +9,7 @@
   - '~/.config'
   - '~/.gnupg'
   - '~/.vim'
+  - '~/.atom'
 
 - shell:
   - [git pull origin master, Updating repo]
@@ -16,6 +17,11 @@
   - ["make -C nanorc", "Setting up nanorc"]
 
 - link:
+    ~/.atom/packages.cson: config/atom/packages.cson
+    ~/.atom/config.cson: config/atom/config.cson
+    ~/.atom/styles.less: config/atom/styles.less
+    ~/.atom/snippets.cson: config/atom/snippets.cson
+    ~/.atom/keymap.cson: config/atom/keymap.cson
     ~/.bash_profile: bash_profile
     ~/.bashrc: rc/bashrc
     ~/.zshrc: rc/zshrc
@@ -62,3 +68,4 @@
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["apm  install  parcel", "installing Atom Parcel"]
