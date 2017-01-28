@@ -64,7 +64,7 @@
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
-  - command: ./dotbot/bin/dotbot -p dotbot-apt-get/aptget.py -c packages.conf.yaml -d .
+  - command: ./dotbot/bin/dotbot -p dotbot-apt-get/aptget.py -c ubuntupackages.conf.yaml -d .
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
