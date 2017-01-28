@@ -56,8 +56,7 @@
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
-  - command: ./install-archlinux -p dotbot-yaourt/yaourt.py -c 
-packages.conf.yaml
+  - command: ./install-archlinux -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
     stdin: true
     stdout: true
   - mkdir -p ~/.mpd
