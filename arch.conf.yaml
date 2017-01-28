@@ -44,11 +44,11 @@
     ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
     ~/.tmux.conf: config/tmux.conf
     ~/.Xresources: Xresources
-    ~/.vim:
+    ~/.vimrc: config/vimrc
+    ~/.vim/bundle/Vundle.vim:
       force: true
       relink: true
-      path: vim
-    ~/.vimrc: config/vimrc
+      path: vim/Vundle.vim
 
 
 - shell:
@@ -58,7 +58,7 @@
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
-  - command: ./install-archlinux -p dotbot-yaourt/yaourt.py -c packages.conf.yaml
+  - command: ./dotbot/bin/dotbot -p dotbot-yaourt/yaourt.py -c packages.conf.yaml -d .
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
