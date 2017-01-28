@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jnurmine/Zenburn'
 Bundle 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " colorschemes
 Plugin 'tomasr/molokai'
 
@@ -56,6 +58,9 @@ nnoremap ; :
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 let g:rehash256=1
 
