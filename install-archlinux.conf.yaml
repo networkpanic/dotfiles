@@ -29,10 +29,6 @@
       force: true
       relink: true
       path: rc/zsh_custom/
-    ~/.config/xfce4/panel:
-      force: true
-      relink: true
-      path: config/xfce4/panel
     ~/.config/xfce4/terminal:
       force: true
       relink: true
