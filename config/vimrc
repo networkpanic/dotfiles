@@ -14,6 +14,9 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ap/vim-css-color'
+
 " colorschemes
 Plugin 'tomasr/molokai'
 
