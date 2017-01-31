@@ -24,11 +24,12 @@ MiscUseShiftArrowsToScroll=FALSE
 ScrollingUnlimited=TRUE
 FontName=Roboto Mono for Powerline Bold 10
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0,740000
+BackgroundDarkness=0,790000
 ColorCursor=#f8f8f8f8f8f8
 ColorForeground=#f8f8f8f8f8f8
 ColorBackground=#171717171717
 ColorPalette=rgb(23,23,23);rgb(216,23,35);rgb(151,208,26);rgb(255,184,48);rgb(61,150,255);rgb(255,36,62);rgb(17,227,188);rgb(235,235,235);rgb(57,50,65);rgb(255,82,82);rgb(118,182,57);rgb(225,161,38);rgb(40,156,213);rgb(255,99,127);rgb(10,155,129);rgb(248,248,248)
 MiscCopyOnSelect=FALSE
 MiscSlimTabs=FALSE
+MiscScrollAlternateScreen=TRUE
 
