@@ -1,5 +1,9 @@
 "*":
-  core: {}
+  core:
+    autoHideMenuBar: true
+    telemetryConsent: "no"
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
   "tool-bar": {}
+  welcome:
+    showOnStartup: false
