@@ -1,4 +1,8 @@
 "*":
+  "activate-power-mode":
+    plugins:
+      playAudio: true
+      screenShake: true
   core:
     autoHideMenuBar: true
     telemetryConsent: "no"
