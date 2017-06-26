@@ -38,3 +38,5 @@ Icon?
 Thumbs.db
 
 *.pyc
+.gitlab-ci.yml
+
