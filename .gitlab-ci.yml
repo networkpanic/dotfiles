@@ -1,0 +1,7 @@
+stages:
+  - deploy
+
+Git MIRROR:
+  stage: deploy
+  script:
+    - git push --mirror https://63f1d21762da92708d4469dbeae280d97a91e29c:x-oauth-basic@github.com/acidhunter/dotfiles.git
