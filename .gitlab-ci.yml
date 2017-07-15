@@ -4,4 +4,4 @@ stages:
 Git MIRROR:
   stage: deploy
   script:
-    - git update-index --assume-unchanged .gitlab-ci.yml && git push --mirror https://a1b8f17b34d66397594013805c2472d4ca767389:x-oauth-basic@github.com/acidhunter/dotfiles.git
+    - git update-index --assume-unchanged .gitlab-ci.yml && git push --mirror https://e6cfdd54c467ac5734af7f4c263b3045338c68c2:x-oauth-basic@github.com/acidhunter/dotfiles.git
