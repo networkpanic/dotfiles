@@ -26,7 +26,7 @@
     ~/.bashrc: rc/bashrc
     ~/.zshrc: rc/zshrc
     ~/.gitconfig: gitconfig
-    ~/.gitignore: gitignore
+    ~/.gitignore: .gitignore
     ~/.oh-my-zsh:
       force: true
       relink: true
