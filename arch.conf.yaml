@@ -44,6 +44,7 @@
       force: true
       path: nanorc/build/ALL.nanorc
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
+    ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/ranger: config/ranger
