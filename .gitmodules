@@ -4,9 +4,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/powerline/fonts.git
 [submodule "nanorc"]
 	path = nanorc
 	url = https://github.com/nanorc/nanorc.git
