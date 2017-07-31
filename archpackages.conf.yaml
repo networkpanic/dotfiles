@@ -1,15 +1,16 @@
-- yaourt:
+- pacman:
   - vim
-  - vim-molokai
   - zsh
-  - tmux
   - htop
   - scrot
-  - xclip
-  - atom
   - mpd
-  - ncmpcpp
   - git
   - curl
+  - tmux
+- pacaur:
+  - vim-molokai
+  - xclip
+  - atom
+  - ncmpcpp
   - httpie
   - nerd-fonts-complete
