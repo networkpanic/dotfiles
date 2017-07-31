@@ -39,7 +39,7 @@
       force: true
       relink: true
       path: config/xfce4/terminal
-    ~/.config/xfce4/xfconf/xfce-perchannel-xml: config/xfce4/xfconf/xfce-perchannel-xml
+    ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
