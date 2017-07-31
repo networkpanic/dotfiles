@@ -19,27 +19,28 @@ printinfo() {
     info underline
 
     info "Model" model
-    info "OS" distro
+    # info "OS" distro
     info "Kernel" kernel
-    info "Uptime" uptime
-    info "Packages" packages
+    # info "Uptime" uptime
+    # info "Packages" packages
     info "Shell" shell
-    info "Resolution" resolution
+    # info "Resolution" resolution
     info "DE" de
-    info "WM" wm
-    info "WM Theme" wmtheme
+    # info "WM" wm
+    # info "WM Theme" wmtheme
     # info "Theme" theme
     # info "Icons" icons
-    info "Terminal" term
-    info "Terminal Font" termfont
+    # info "Terminal" term
+    # info "Terminal Font" termfont
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
 
-    # info "CPU Usage" cpu_usage
-    # info "Disk" disk
+    info "CPU Usage" cpu_usage
+    info "Disk" disk
     # info "Battery" battery
     # info "Font" font
+    info linebreak
     info "Song" song
     # info "Local IP" localip
     # info "Public IP" publicip
@@ -85,7 +86,7 @@ shell_path="off"
 
 # Show $SHELL's version
 # --shell_version on, off
-shell_version="on"
+shell_version="off"
 
 
 # CPU
@@ -99,7 +100,7 @@ speed_type="bios"
 # CPU Shorthand
 # Set shorthand setting
 # --cpu_shorthand name, speed, tiny, on, off
-cpu_shorthand="name"
+cpu_shorthand="tiny"
 
 # CPU Usage display
 # Set CPU usage display setting
@@ -130,7 +131,7 @@ cpu_temp="on"
 
 # Enable/Disable GPU Brand
 # --gpu_brand on, off
-gpu_brand="on"
+gpu_brand="off"
 
 
 # Resolution
@@ -138,7 +139,7 @@ gpu_brand="on"
 # Display refresh rate next to each monitor
 # Unsupported on Windows
 # --refresh_rate on, off
-refresh_rate="on"
+refresh_rate="off"
 
 
 # Gtk Theme / Icons
@@ -168,7 +169,7 @@ public_ip_host="http://ident.me"
 
 # Print the Artist and Title on seperate lines
 # --song_shorthand on, off
-song_shorthand="off"
+song_shorthand="on"
 
 
 # Birthday
@@ -233,7 +234,7 @@ end=7
 
 # Toggle color blocks
 # --color_blocks on, off
-color_blocks="on"
+color_blocks="off"
 
 # Color block width in spaces
 # --block_width num
@@ -279,7 +280,7 @@ progress_color_total="distro"
 # --memory_display bar, infobar, barinfo, off
 # --battery_display bar, infobar, barinfo, off
 # --disk_display bar, infobar, barinfo, off
-memory_display="off"
+memory_display="bar"
 battery_display="off"
 disk_display="off"
 
