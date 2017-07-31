@@ -39,10 +39,13 @@
       force: true
       relink: true
       path: config/xfce4/terminal
+    ~/.config/xfce4/xfconf/xfce-perchannel-xml: config/xfce4/xfconf/xfce-perchannel-xml
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
+    ~/.config/cava: config/cava
+    ~/.config/htop: config/htop
     ~/.config/ranger: config/ranger
     ~/.config/neofetch: config/neofetch
     ~/.ncmpcpp/config: config/ncmpcpp.conf
