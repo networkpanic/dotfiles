@@ -16,3 +16,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
