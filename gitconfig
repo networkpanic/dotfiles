@@ -1,9 +1,8 @@
 [user]
-	name = Acidhunter
+	name = Martin F. (acidhunter)
 	email = npanic@kmpt.nz
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore
 [color]
 	ui = auto
-
