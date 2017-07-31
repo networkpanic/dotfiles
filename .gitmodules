@@ -19,3 +19,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "dotbot-sync"]
+	path = dotbot-sync
+	url = https://github.com/j1r1k/dotbot-sync.git
