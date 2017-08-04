@@ -7,6 +7,9 @@
   - git
   - curl
   - tmux
+  - qt5ct
+  - qt5-styleplugins
+  - vertex-themes
 - pacaur:
   - vim-molokai
   - xclip
