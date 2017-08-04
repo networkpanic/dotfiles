@@ -2,7 +2,9 @@
 	name = Martin F. (acidhunter)
 	email = npanic@kmpt.nz
 [core]
-	editor = nano
+	editor = vim
 	excludesfile = ~/.gitignore
 [color]
 	ui = auto
+[http "https://gopkg.in"]
+	followRedirects = true
