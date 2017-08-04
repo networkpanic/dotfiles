@@ -10,6 +10,7 @@
   - qt5ct
   - qt5-styleplugins
   - vertex-themes
+  - rsync
 - pacaur:
   - vim-molokai
   - xclip
