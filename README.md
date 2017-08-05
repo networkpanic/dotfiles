@@ -1,21 +1,55 @@
 
 
-Acidhunters dotbot powered dotfiles
+Acidhunters dotfiles
 =================
-
 This is a repository of dotfiles, managed with  [Dotbot][dotbot].
 
+Warning
+-----------
+Take a look at *.conf.yaml!!!
 
+The install script will remove existing config!
+
+Save it!
 
 
 Installation
 -----------
-**ubuntu is untested!**
+**ubuntu is outdated!**
 
 cd ~/ && git clone git@github.com:acidhunter/dotfiles.git && cd dotfiles
 
 ./install [arch|ubuntu]
 
+Included
+-----------
+- configs
+  - atom
+  - bash
+  - cava
+  - davfs2
+  - gpg-agent
+  - gpg
+  - htop
+  - mpd
+  - ncmpcpp
+  - neofetch
+  - ranger
+  - ssh
+  - tmux
+  - vim
+  - xfce4-keyboard-shortcuts
+  - Xresources
+  - zsh
+
+- submodules
+  - dotbot
+  - dotbot-apt-get
+  - dotbot-pacaur
+  - powerline fonts
+  - nanorc
+  - oh-my-zsh
+  - vim
 
 
 
