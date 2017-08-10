@@ -18,6 +18,7 @@ printinfo() {
     info title
     info underline
 
+<<<<<<< HEAD
     info "Model" model
     # info "OS" distro
     info "Kernel" kernel
@@ -32,13 +33,35 @@ printinfo() {
     # info "Icons" icons
     # info "Terminal" term
     # info "Terminal Font" termfont
+=======
+    #info "Model" model
+    info "OS" distro
+    info "Kernel" kernel
+    #info "Uptime" uptime
+    #info "Packages" packages
+    info "Shell" shell
+    #info "Resolution" resolution
+    info "DE" de
+    #info "WM" wm
+    #info "WM Theme" wmtheme
+    # info "Theme" theme
+    # info "Icons" icons
+    #info "Terminal" term
+    #info "Terminal Font" termfont
+>>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
 
+<<<<<<< HEAD
     info "CPU Usage" cpu_usage
     info "Disk" disk
     # info "Battery" battery
+=======
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    info "Battery" battery
+>>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
     # info "Font" font
     info linebreak
     info "Song" song
@@ -281,7 +304,11 @@ progress_color_total="distro"
 # --battery_display bar, infobar, barinfo, off
 # --disk_display bar, infobar, barinfo, off
 memory_display="bar"
+<<<<<<< HEAD
 battery_display="off"
+=======
+battery_display="bar"
+>>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
 disk_display="off"
 
 
