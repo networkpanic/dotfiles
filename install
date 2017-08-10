@@ -2,6 +2,7 @@
 
 set -e
 
+
 DEFAULT_CONFIG_PREFIX=""
 CONFIG_SUFFIX=".conf.yaml"
 DOTBOT_DIR="dotbot"
@@ -11,6 +12,8 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
+
+sh sync.sh
 
 for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
 	# echo "Applying settings for ${conf}..."

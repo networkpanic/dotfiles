@@ -7,8 +7,15 @@
   - git
   - curl
   - tmux
+<<<<<<< HEAD
   - iotop
   - nethogs
+=======
+  - qt5ct
+  - qt5-styleplugins
+  - vertex-themes
+  - rsync
+>>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
 - pacaur:
   - vim-molokai
   - xclip
@@ -16,4 +23,9 @@
   - ncmpcpp
   - httpie
   - nerd-fonts-complete
+<<<<<<< HEAD
+=======
+  - catimg
+  - mpdris2
+>>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
   - slurm
