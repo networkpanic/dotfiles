@@ -5,9 +5,6 @@
       screenShake: true
   core:
     autoHideMenuBar: true
-    disabledPackages: [
-      "parcel"
-    ]
     telemetryConsent: "no"
   editor:
     fontSize: 11
