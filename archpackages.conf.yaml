@@ -7,6 +7,8 @@
   - git
   - curl
   - tmux
+  - iotop
+  - nethogs
 - pacaur:
   - vim-molokai
   - xclip
@@ -14,3 +16,4 @@
   - ncmpcpp
   - httpie
   - nerd-fonts-complete
+  - slurm
