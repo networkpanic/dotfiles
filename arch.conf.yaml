@@ -17,6 +17,7 @@
   - ["make -C nanorc", "Setting up nanorc"]
 
 - link:
+    ~/.antigen: antigen
     ~/.atom/packages.cson: config/atom/packages.cson
     ~/.atom/config.cson: config/atom/config.cson
     ~/.atom/styles.less: config/atom/styles.less
@@ -43,10 +44,6 @@
       force: true
       path: nanorc/build/ALL.nanorc
     ~/.ncmpcpp/config: config/ncmpcpp.conf
-    ~/.oh-my-zsh:
-      force: true
-      relink: true
-      path: oh-my-zsh/
     ~/.ssh/config: config/ssh/config
     ~/.tmux.conf: config/tmux.conf
     ~/.vimrc: config/vimrc
@@ -56,10 +53,6 @@
       path: vim/Vundle.vim
     ~/.Xresources: Xresources
     ~/.zshrc: rc/zshrc
-    ~/.zsh_custom:
-      force: true
-      relink: true
-      path: rc/zsh_custom/
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
