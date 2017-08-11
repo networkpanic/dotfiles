@@ -15,7 +15,7 @@ antigen bundle gpg-agent
 antigen bundle git-extras
 antigen bundle git-flow
 antigen bundle pyenv
-antigen bundle systemd 
+antigen bundle systemd
 antigen bundle sudo
 antigen bundle tmux
 antigen bundle httpie
@@ -26,17 +26,16 @@ antigen bundle git
 antigen bundle pip
 antigen bundle python
 antigen bundle virtualenv
-
 antigen bundle lein
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-# Load the theme.
-
-antigen theme robbyrussell/oh-my-zsh themes/agnoster
+antigen bundle zsh-users/zsh-completions
 
 
+#antigen theme robbyrussell/oh-my-zsh themes/agnoster
+antigen theme eendroroy/alien alien
 
 # Tell Antigen that you're done.
 antigen apply
