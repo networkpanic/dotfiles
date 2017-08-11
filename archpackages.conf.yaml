@@ -15,7 +15,10 @@
   - qt5-styleplugins
   - vertex-themes
   - rsync
+<<<<<<< HEAD
 >>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
+=======
+>>>>>>> oh-my-zsh
 - pacaur:
   - vim-molokai
   - xclip
@@ -27,5 +30,8 @@
 =======
   - catimg
   - mpdris2
+<<<<<<< HEAD
 >>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
+=======
+>>>>>>> oh-my-zsh
   - slurm
