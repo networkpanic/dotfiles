@@ -22,18 +22,9 @@ MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 ScrollingUnlimited=TRUE
-<<<<<<< HEAD
-FontName=InconsolataForPowerline Nerd Font Medium 10
+FontName=mononoki Nerd Font Bold Italic 12
 BackgroundDarkness=0.880000
-=======
-FontName=InconsolataForPowerline Nerd Font Medium 12
-<<<<<<< HEAD
-BackgroundDarkness=0.820000
->>>>>>> 71ea1f6cc5195859e4aa6212fefb63e6af86c18a
-=======
-BackgroundDarkness=0.880000
->>>>>>> oh-my-zsh
-MiscCopyOnSelect=FALSE
+MiscCopyOnSelect=TRUE
 MiscSlimTabs=FALSE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundImageShading=0.000000
