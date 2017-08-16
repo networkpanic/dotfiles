@@ -1,5 +1,4 @@
 
-
 Acidhunters dotfiles
 =================
 This is a repository of dotfiles, managed with  [Dotbot][dotbot].
@@ -44,7 +43,6 @@ Included
 
 - submodules
   - dotbot
-  - dotbot-apt-get
   - dotbot-pacaur
   - powerline fonts
   - nanorc
