@@ -39,5 +39,4 @@ Thumbs.db
 
 *.pyc
 
-*.gitlab-ci.yml
 __pycache__
