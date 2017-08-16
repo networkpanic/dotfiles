@@ -17,8 +17,7 @@ export LANG=C
 printinfo() {
     info title
     info underline
-    info "Model" model
-    # info "OS" distro
+    info "OS" distro
     info "Kernel" kernel
     # info "Uptime" uptime
     # info "Packages" packages
@@ -32,19 +31,9 @@ printinfo() {
     # info "Terminal" term
     # info "Terminal Font" termfont
     #info "Model" model
-    info "OS" distro
-    info "Kernel" kernel
     #info "Uptime" uptime
     #info "Packages" packages
-    info "Shell" shell
     #info "Resolution" resolution
-    info "DE" de
-    #info "WM" wm
-    #info "WM Theme" wmtheme
-    # info "Theme" theme
-    # info "Icons" icons
-    #info "Terminal" term
-    #info "Terminal Font" termfont
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
