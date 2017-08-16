@@ -1,4 +1,4 @@
 Git MIRROR:
   stage: deploy
   script:
-    - git pull origin antigen && git fetch antigen && git checkout antigen && git push --mirror https://$GITHUB_TOKEN:x-oauth-basic@github.com/acidhunter/dotfiles.git
+    - git pull origin antigen:HEAD && git fetch antigen antigen:HEAD && git checkout origin/antigen && git push --mirror https://$GITHUB_TOKEN:x-oauth-basic@github.com/acidhunter/dotfiles.git origin/antigen
