@@ -1,4 +1,4 @@
 Git MIRROR:
   stage: deploy
   script:
-    - git fetch origin && git push --mirror https://$GITHUB_TOKEN:x-oauth-basic@github.com/acidhunter/dotfiles.git
+    - git fetch origin -all && git pull && git push --mirror https://$GITHUB_TOKEN:x-oauth-basic@github.com/acidhunter/dotfiles.git
