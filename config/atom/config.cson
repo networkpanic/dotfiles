@@ -5,11 +5,16 @@
       screenShake: true
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "language-gfm"
+    ]
     telemetryConsent: "no"
   editor:
     fontSize: 13
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
   "tool-bar": {}
+  "tool-bar-markdown-writer":
+    visibility: "showToolbarOnMarkdown"
   welcome:
     showOnStartup: false
