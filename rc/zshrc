@@ -8,7 +8,7 @@ antigen bundle robbyrussell/oh-my-zsh lib/
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle archlinux
 
-#antigen bundle ssh-agent
+antigen bundle ssh-agent
 antigen bundle rupa/z
 antigen bundle docker
 antigen bundle gpg-agent
@@ -28,6 +28,8 @@ antigen bundle python
 antigen bundle virtualenv
 antigen bundle lein
 antigen bundle command-not-found
+antigen bundle desyncr/auto-ls
+
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
