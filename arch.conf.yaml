@@ -29,7 +29,6 @@
       force: true
       relink: true
       path: config/xfce4/terminal
-    ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/ranger: config/ranger
