@@ -6,3 +6,4 @@ fix ssh-agent to make use of gnome-keyring
 wallpaper stuff
 ubuntu support
 osx support
+split desktop/headless dots
