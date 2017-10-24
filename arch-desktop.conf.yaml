@@ -1,0 +1,64 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+  - '~'
+  - '~/.config'
+  - '~/.gnupg'
+  - '~/.vim'
+  - '~/.atom'
+
+- shell:
+  - [git pull origin master, Updating repo]
+  - [git submodule update --init --recursive, Installing submodules]
+  - ["make -C nanorc", "Setting up nanorc"]
+
+- link:
+    ~/.antigen: antigen
+    ~/.atom/packages.cson: config/atom/packages.cson
+    ~/.atom/config.cson: config/atom/config.cson
+    ~/.atom/styles.less: config/atom/styles.less
+    ~/.atom/snippets.cson: config/atom/snippets.cson
+    ~/.atom/keymap.cson: config/atom/keymap.cson
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: rc/bashrc
+    ~/.config/cava: config/cava
+    ~/.config/htop: config/htop
+    ~/.config/ranger: config/ranger
+    ~/.config/neofetch: config/neofetch
+    ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitignore: config/git/gitignore
+    ~/.git_template: config/git/git_template
+    ~/.gnupg/gpg.conf: config/gpg.conf
+    ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
+    ~/.mpd/mpd.conf: config/mpd/mpd.conf
+    ~/.nanorc:
+      force: true
+      path: nanorc/build/ALL.nanorc
+    ~/.ncmpcpp/config: config/ncmpcpp.conf
+    ~/.ssh/config: config/ssh/config
+    ~/.tmux.conf: config/tmux.conf
+    ~/.vimrc: config/vimrc
+    ~/.vim/bundle/Vundle.vim:
+      force: true
+      relink: true
+      path: vim/Vundle.vim
+    ~/.Xresources: Xresources
+    ~/.zshrc: rc/zshrc
+
+- shell:
+  - [git submodule update --init --remote, Updating submodules]
+  - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
+  - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
+  - command: ./fonts/install.sh
+    stdin: true
+    stdout: true
+  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch-desktop.packages.conf.yaml -d .
+    stdin: true
+    stdout: true
+  - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["sh ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]

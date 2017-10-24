@@ -1,21 +1,33 @@
 - pacman:
   - vim
+  - gnome-mpv
+  - gnome-session-properties
+  - gnome-shell-extension-installer
   - zsh
   - htop
+  - scrot
   - mpd
   - git
   - curl
   - tmux
   - iotop
   - nethogs
+  - qt5ct
+  - qt5-styleplugins
+  - vertex-themes
   - rsync
+  - ruby
+  - ruby-bundler
   - ncdu
 - pacaur:
+  - chrome-gnome-shell-git
   - vim-molokai
   - xclip
+  - atom
   - ncmpcpp
   - httpie
   - catimg
+  - mpdris2
   - slurm
   - lolcat
   - mpdris2
