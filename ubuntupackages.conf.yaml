@@ -1,9 +1,0 @@
-- aptget:
-  - vim
-  - vim-molokai
-  - zsh
-  - tmux
-  - htop
-  - scrot
-  - xclip
-  - atom
