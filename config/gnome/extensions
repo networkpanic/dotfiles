@@ -1,0 +1,19 @@
+gnomeshell-extension-manage --install --user --extension-id 15
+gnomeshell-extension-manage --install --user --extension-id 1228
+gnomeshell-extension-manage --install --user --extension-id 16
+gnomeshell-extension-manage --install --user --extension-id 1251
+gnomeshell-extension-manage --install --user --extension-id 1100
+gnomeshell-extension-manage --install --user --extension-id 517
+gnomeshell-extension-manage --install --user --extension-id 779
+gnomeshell-extension-manage --install --user --extension-id 97
+gnomeshell-extension-manage --install --user --extension-id 1160
+gnomeshell-extension-manage --install --user --extension-id 1253
+gnomeshell-extension-manage --install --user --extension-id 1036
+gnomeshell-extension-manage --install --user --extension-id 841
+gnomeshell-extension-manage --install --user --extension-id 1015
+gnomeshell-extension-manage --install --user --extension-id 1272
+gnomeshell-extension-manage --install --user --extension-id 55
+gnomeshell-extension-manage --install --user --extension-id 1031
+gnomeshell-extension-manage --install --user --extension-id 19
+gnomeshell-extension-manage --install --user --extension-id 858
+
