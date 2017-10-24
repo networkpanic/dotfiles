@@ -1,0 +1,8 @@
+fix atom -> atom-editor-bin on arch
+add lolcommits install 
+tilix dots 
+gconf dots 
+fix ssh-agent to make use of gnome-keyring 
+wallpaper stuff
+ubuntu support
+osx support
