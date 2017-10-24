@@ -18,7 +18,6 @@
 
 - link:
     ~/.antigen: antigen
-    ~/.atom/packages.cson: config/atom/packages.cson
     ~/.atom/config.cson: config/atom/config.cson
     ~/.atom/styles.less: config/atom/styles.less
     ~/.atom/snippets.cson: config/atom/snippets.cson
@@ -61,4 +60,5 @@
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["sh ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
