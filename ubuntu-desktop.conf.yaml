@@ -62,5 +62,6 @@
 #    stdout: true
   - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["sudo gem install lolcommits", "Installing lolcommits (essential)"]
   - ["sh ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
 
