@@ -28,6 +28,8 @@ antigen bundle python
 antigen bundle virtualenv
 antigen bundle lein
 antigen bundle command-not-found
+antigen bundle desyncr/auto-ls
+
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -43,3 +45,4 @@ antigen apply
 
 alias ls="ls --color=auto --group-directories-first"
 alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
+alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"

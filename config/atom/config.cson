@@ -24,7 +24,7 @@
       "one-dark-syntax"
     ]
   editor:
-    fontSize: 13
+    fontSize: 16
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
   "tool-bar": {}
