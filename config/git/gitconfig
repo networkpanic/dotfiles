@@ -9,3 +9,5 @@
 	ui = auto
 [http "https://gopkg.in"]
 	followRedirects = true
+[init]
+	templatedir = ~/.git_template

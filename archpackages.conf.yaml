@@ -13,14 +13,19 @@
   - qt5-styleplugins
   - vertex-themes
   - rsync
+  - ruby
+  - ruby-bundler
+  - ncdu
 - pacaur:
   - vim-molokai
   - xclip
   - atom
   - ncmpcpp
   - httpie
-  - nerd-fonts-complete
   - catimg
   - mpdris2
   - slurm
   - lolcat
+  - mpdris2
+  - netdiscover
+  - chkservice
