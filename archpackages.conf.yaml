@@ -1,5 +1,8 @@
 - pacman:
   - vim
+  - gnome-mpv
+  - gnome-session-properties
+  - gnome-shell-extension-installer
   - zsh
   - htop
   - scrot
@@ -17,6 +20,7 @@
   - ruby-bundler
   - ncdu
 - pacaur:
+  - chrome-gnome-shell-git
   - vim-molokai
   - xclip
   - atom

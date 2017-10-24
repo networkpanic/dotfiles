@@ -1,3 +1,6 @@
+sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
+sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
+
 gnomeshell-extension-manage --install --user --extension-id 15
 gnomeshell-extension-manage --install --user --extension-id 1228
 gnomeshell-extension-manage --install --user --extension-id 16
@@ -17,3 +20,4 @@ gnomeshell-extension-manage --install --user --extension-id 1031
 gnomeshell-extension-manage --install --user --extension-id 19
 gnomeshell-extension-manage --install --user --extension-id 858
 
+gnome-shell --replace &
