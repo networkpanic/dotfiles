@@ -7,7 +7,6 @@ antigen bundle robbyrussell/oh-my-zsh lib/
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle archlinux
-
 antigen bundle ssh-agent
 antigen bundle rupa/z
 antigen bundle docker
