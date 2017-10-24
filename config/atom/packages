@@ -1,0 +1,15 @@
+atom-material-ui@2.0.6
+atom-reveal-md@1.0.0
+activate-power-mode
+language-markdown@0.25.1
+markdown-pdf@2.1.0
+markdown-preview-plus@2.4.10
+markdown-table-editor@0.6.4
+markdown-toc@0.4.2
+markdown-writer@2.7.2
+pandoc@0.2.2
+pandoc-convert@1.1.1
+revealjs-preview@0.3.1
+tool-bar@1.1.0
+tool-bar-markdown-writer@0.3.0
+git-time-machine
