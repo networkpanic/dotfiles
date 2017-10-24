@@ -19,6 +19,8 @@
   - ruby
   - ruby-bundler
   - ncdu
+  - mplayer
+  - imagemagick
 - pacaur:
   - chrome-gnome-shell-git
   - vim-molokai
