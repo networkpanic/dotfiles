@@ -10,6 +10,7 @@ antigen bundle archlinux
 antigen bundle ssh-agent
 antigen bundle rupa/z
 antigen bundle docker
+antigen bundle docker-compose
 antigen bundle gpg-agent
 antigen bundle git-extras
 antigen bundle git-flow
@@ -28,6 +29,9 @@ antigen bundle virtualenv
 antigen bundle lein
 antigen bundle command-not-found
 antigen bundle desyncr/auto-ls
+antigen bundle zuxfoucault/colored-man-pages_mod
+antigen bundle horosgrisa/mysql-colorize
+antigen bundle man
 
 
 # Syntax highlighting bundle.
@@ -35,7 +39,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-#antigen theme robbyrussell/oh-my-zsh themes/agnoster
+
+
 antigen theme eendroroy/alien alien
 
 # Tell Antigen that you're done.
@@ -45,3 +50,16 @@ antigen apply
 alias ls="ls --color=auto --group-directories-first"
 alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
+
+lel () {
+  set -f
+  script -q -f  -c "lolcat --spread 0.8 -F 0.4 '$@'" | tee > "$@".lol
+  set +f
+}
+
+
+if [[ $(find ~/dotfiles/motd.lol -mmin +15 -print) ]]; then
+  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol
+fi
+
+cat  ~/dotfiles/motd.lol
