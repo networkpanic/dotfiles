@@ -54,12 +54,12 @@ alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
 
 lel () {
   set -f
-  script -q -f  -c "lolcat --spread 0.8 -F 0.4 '$@'" | tee > "$@".lol
+  script -q -f  -c "lolcat --spread 0.8 -F 0.4 '$@'" | tee > "$@".lel
   set +f
 }
 
 
-if [[ $(find ~/dotfiles/motd.lol -mmin +15 -print) ]]; then
+if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
   script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol
 fi
 
