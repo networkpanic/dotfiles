@@ -57,9 +57,9 @@
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
-#  - command: ./dotbot/bin/dotbot -p dotbot-apt-get/aptget.py -c ubuntu-desktop.packages.conf.yaml -d .
-#    stdin: true
-#    stdout: true
+  - command: sudo ./dotbot/bin/dotbot -p ~/dotfiles/dotbot_plguin_aptget/aptget.py -c ~/dotfiles/ubuntu-desktop.packages.conf.yaml -d .
+    stdin: true
+    stdout: true
   - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
   - ["sudo gem install lolcommits", "Installing lolcommits (essential)"]
