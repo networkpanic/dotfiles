@@ -1,7 +1,7 @@
 
-Acidhunters dotfiles
+My dotfiles
 =================
-This is a repository of dotfiles, managed with  [Dotbot][dotbot].
+This is a repository of dotfiles, managed with  [Dotbot](https://github.com/anishathalye/dotbot).
 
 
 Warning
@@ -15,12 +15,12 @@ Save it!
 
 Installation
 -----------
-**ubuntu is outdated!** 
+**ubuntu is outdated!**
 (get fixed soon)
 
-cd ~/ && git clone git@github.com:acidhunter/dotfiles.git && cd dotfiles
-
-./install [arch-desktop|arch-headless]
+ - clone the repo
+ - cd into it "cd dotfiles"
+ - install via ./install [arch-desktop|arch-headless|ubuntu-desktop|ubuntu-headless]
 
 
 Inspiration
@@ -30,7 +30,7 @@ If you're looking for inspiration for how to structure your dotfiles or what
 kinds of things you can include, you could take a look at some repos using
 Dotbot.
 
-There are about [700 more here][dotbot-users].
+There are about [700 more here](https://github.com/anishathalye/dotbot/wiki/Users).
 
 If you're using Dotbot and you'd like to include a link to your dotfiles here
 as an inspiration to others, please submit a pull request.
