@@ -25,7 +25,8 @@
   - chrome-gnome-shell-git
   - vim-molokai
   - xclip
-  - atom
+  - atom-editor-bin
+  - neofetch
   - ncmpcpp
   - httpie
   - catimg

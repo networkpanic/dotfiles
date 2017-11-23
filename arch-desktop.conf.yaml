@@ -40,6 +40,7 @@
       path: nanorc/build/ALL.nanorc
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
+    ~/.ssh/config.d: private/ssh
     ~/.tmux.conf: config/tmux.conf
     ~/.vimrc: config/vimrc
     ~/.vim/bundle/Vundle.vim:

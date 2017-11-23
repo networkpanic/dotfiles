@@ -1,22 +1,18 @@
 sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
 sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
 
-gnomeshell-extension-manage --install --user --extension-id 15
+gnomeshell-extension-manage --install --user --extension-id 1010
 gnomeshell-extension-manage --install --user --extension-id 1228
 gnomeshell-extension-manage --install --user --extension-id 16
-gnomeshell-extension-manage --install --user --extension-id 1251
-gnomeshell-extension-manage --install --user --extension-id 1100
+gnomeshell-extension-manage --install --user --extension-id 1312
 gnomeshell-extension-manage --install --user --extension-id 517
 gnomeshell-extension-manage --install --user --extension-id 779
 gnomeshell-extension-manage --install --user --extension-id 97
-gnomeshell-extension-manage --install --user --extension-id 1160
-gnomeshell-extension-manage --install --user --extension-id 1253
-gnomeshell-extension-manage --install --user --extension-id 1036
-gnomeshell-extension-manage --install --user --extension-id 841
-gnomeshell-extension-manage --install --user --extension-id 1015
-gnomeshell-extension-manage --install --user --extension-id 1272
+gnomeshell-extension-manage --install --user --extension-id 307
+gnomeshell-extension-manage --install --user --extension-id 1112
 gnomeshell-extension-manage --install --user --extension-id 55
 gnomeshell-extension-manage --install --user --extension-id 1031
+gnomeshell-extension-manage --install --user --extension-id 1015
 gnomeshell-extension-manage --install --user --extension-id 19
 gnomeshell-extension-manage --install --user --extension-id 858
 
