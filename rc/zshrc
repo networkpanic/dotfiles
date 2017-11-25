@@ -65,3 +65,4 @@ if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 fi
 
 cat  ~/dotfiles/motd.lol
+export GPG_TTY=$(tty)
