@@ -61,7 +61,7 @@ lel () {
 
 
 if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
-  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol
+  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
 fi
 
 cat  ~/dotfiles/motd.lol
