@@ -1,7 +1,7 @@
 [user]
 	name = Martin Friedrich
 	email = martin.friedrich@draglet.com
-	signingkey = 0x89CFEDF511280429
+	signingkey = C5CD2E361521E91503ADF9EF99108392367F2A76
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
@@ -11,3 +11,5 @@
 	followRedirects = true
 [init]
 	templatedir = ~/.git_template
+[commit]
+	gpgsign = true
