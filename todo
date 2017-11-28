@@ -1,9 +1,5 @@
-fix atom -> atom-editor-bin on arch
-add lolcommits install 
 tilix dots 
-gconf dots 
-fix ssh-agent to make use of gnome-keyring 
+gconf dots
 wallpaper stuff
 ubuntu support
 osx support
-split desktop/headless dots
