@@ -31,9 +31,9 @@ printinfo() {
     # info "Terminal" term
     # info "Terminal Font" termfont
     #info "Model" model
-    #info "Uptime" uptime
+    info "Uptime" uptime
     #info "Packages" packages
-    #info "Resolution" resolution
+    info "Resolution" resolution
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
@@ -108,7 +108,7 @@ cpu_shorthand="tiny"
 # CPU Usage display
 # Set CPU usage display setting
 # --cpu_display bar, infobar, barinfo, off
-cpu_display="bar"
+cpu_display="off"
 
 # CPU Speed
 # Hide/Show CPU speed.
@@ -283,8 +283,8 @@ progress_color_total="distro"
 # --memory_display bar, infobar, barinfo, off
 # --battery_display bar, infobar, barinfo, off
 # --disk_display bar, infobar, barinfo, off
-memory_display="bar"
-battery_display="bar"
+memory_display="off"
+battery_display="off"
 disk_display="off"
 
 
