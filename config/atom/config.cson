@@ -26,8 +26,7 @@
   editor: {}
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
-  "tool-bar":
-    visible: false
+  "tool-bar": {}
   "tool-bar-markdown-writer":
     visibility: "showToolbarOnMarkdown"
   welcome:
