@@ -1,4 +1,5 @@
 - pacman:
+  - asciinema
   - vim
   - gnome-mpv
   - gnome-session-properties
@@ -22,6 +23,7 @@
   - mplayer
   - imagemagick
 - pacaur:
+  - asciimatics-git
   - chrome-gnome-shell-git
   - vim-molokai
   - xclip
@@ -39,3 +41,4 @@
   - chkservice
   - fswebcam
   - python-stormssh
+  - python-speeed
