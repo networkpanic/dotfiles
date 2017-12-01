@@ -28,6 +28,7 @@ antigen bundle pip
 antigen bundle python
 antigen bundle virtualenv
 antigen bundle lein
+antigen bundle kubectl
 antigen bundle command-not-found
 antigen bundle desyncr/auto-ls
 antigen bundle zuxfoucault/colored-man-pages_mod
@@ -35,12 +36,12 @@ antigen bundle horosgrisa/mysql-colorize
 antigen bundle man
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle bric3/nice-exit-code
+antigen bundle psprint/history-search-multi-word
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
-
 
 
 antigen theme gnzh
@@ -67,4 +68,4 @@ if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 fi
 
 cat  ~/dotfiles/motd.lol
-export GPG_TTY=$(tty)
+#export GPG_TTY=$(tty)
