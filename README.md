@@ -15,12 +15,10 @@ Save it!
 
 Installation
 -----------
-**ubuntu is outdated!**
-(get fixed soon)
 
  - clone the repo
  - cd into it "cd dotfiles"
- - install via ./install [arch-desktop|arch-headless|ubuntu-desktop|ubuntu-headless]
+ - install via ./install [arch-desktop|arch-headless]
 
 
 Inspiration

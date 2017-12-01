@@ -9,21 +9,3 @@ Host *
     stricthostkeychecking no
 
 
-
-
-
-
-Host ve01
-    hostname ve01.draglet.com
-    user root
-    port 2222
-
-Host ve02
-    hostname ve02.draglet.com
-    user root
-    port 2222
-
-Host ve03
-    hostname ve03.draglet.com
-    user root
-    port 22
