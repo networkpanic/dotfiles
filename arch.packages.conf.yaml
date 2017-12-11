@@ -19,6 +19,7 @@
   - rsync
   - ruby
   - ruby-bundler
+  - terminus-font
   - ncdu
   - mplayer
   - imagemagick
@@ -42,3 +43,4 @@
   - fswebcam
   - python-stormssh
   - python-speeed
+  - s-tui

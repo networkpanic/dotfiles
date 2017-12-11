@@ -1,5 +1,5 @@
 
-My dotfiles
+My dotfiles, Archlinux Only
 =================
 This is a repository of dotfiles, managed with  [Dotbot](https://github.com/anishathalye/dotbot).
 
@@ -12,13 +12,25 @@ The install script will remove existing config!
 
 Save it!
 
+At this moment LANG=EN_us.UTF-8 is required for dotbot-pacaur
 
 Installation
 -----------
 
  - clone the repo
  - cd into it "cd dotfiles"
- - install via ./install [arch-desktop|arch-headless]
+ - install via ./install arch
+
+
+Todo
+-----------
+
+ - LANG check
+ - config non user stuff (sudoers, fontconfig)
+ - fix lolcommits install and enable system-wide
+ - gpg encrypted history-sync
+ - better ssh config handling
+ - add missing gnome extensions
 
 
 Inspiration
