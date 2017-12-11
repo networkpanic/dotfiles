@@ -9,6 +9,7 @@ antigen bundle robbyrussell/oh-my-zsh lib/
 antigen bundle archlinux
 antigen bundle ssh-agent
 antigen bundle rupa/z
+antigen bundle changyuheng/fz
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle extract
@@ -19,9 +20,11 @@ antigen bundle pyenv
 antigen bundle systemd
 antigen bundle sudo
 antigen bundle tmux
+antigen bundle greymd/tmux-xpanes
 antigen bundle httpie
 antigen bundle catimg
 antigen bundle nyan
+antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle dirhistory
 antigen bundle git
 antigen bundle pip
@@ -54,7 +57,7 @@ antigen apply
 alias ls="ls --color=auto --group-directories-first"
 alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
-export TERMINAL=tilix
+
 
 lel () {
   set -f
@@ -68,4 +71,7 @@ if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 fi
 
 cat  ~/dotfiles/motd.lol
-#export GPG_TTY=$(tty)
+
+export TERMINAL=tilix
+export GPG_TTY=$(tty)
+export PATH=/home/npanic/.gem/ruby/2.4.0/bin:$PATH
