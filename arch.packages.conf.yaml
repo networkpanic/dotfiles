@@ -44,3 +44,6 @@
   - python-stormssh
   - python-speeed
   - s-tui
+  - peek
+  - bash-pipes
+  - gnome-twitch-player-backend-gstreamer-opengl
