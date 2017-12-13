@@ -57,7 +57,7 @@
   - command: ./fonts/install.sh
     stdin: true
     stdout: true
-  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch-desktop.packages.conf.yaml -d .
+  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch.packages.conf.yaml -d .
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
