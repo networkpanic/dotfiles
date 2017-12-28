@@ -42,3 +42,5 @@ Thumbs.db
 __pycache__
 
 *.lol
+config/ranger/history
+config/ranger/bookmarks
