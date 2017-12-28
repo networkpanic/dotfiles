@@ -12,7 +12,7 @@
 [init]
 	templatedir = ~/.git_template
 [commit]
-	gpgsign = true
+	gpgsign = false
 [diff]
 	tool = vimdiff
 [difftool]

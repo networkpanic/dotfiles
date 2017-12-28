@@ -74,4 +74,4 @@ cat  ~/dotfiles/motd.lol
 
 export TERMINAL=tilix
 export GPG_TTY=$(tty)
-export PATH=/home/npanic/.gem/ruby/2.4.0/bin:$PATH
+export PATH=/home/$(whoami)/.gem/ruby/2.4.0/bin:$PATH
