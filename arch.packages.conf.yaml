@@ -1,50 +1,54 @@
 - pacman:
   - asciinema
-  - vim
+  - curl
+  - fetchmirrors
+  - git
   - gnome-mpv
   - gnome-session-properties
   - gnome-shell-extension-installer
-  - zsh
   - htop
-  - scrot
-  - mpd
-  - git
-  - curl
-  - tmux
+  - imagemagick
   - iotop
+  - mpd
+  - mplayer
+  - mtr
+  - ncdu
   - nethogs
-  - qt5ct
   - qt5-styleplugins
-  - vertex-themes
+  - qt5ct
   - rsync
   - ruby
   - ruby-bundler
+  - scrot
   - terminus-font
-  - ncdu
-  - mplayer
-  - imagemagick
+  - tmux
   - tree
+  - vertex-themes
+  - vim
+  - zsh
 - pacaur:
   - asciimatics-git
-  - chrome-gnome-shell-git
-  - vim-molokai
-  - xclip
+  - asciinema
   - atom-editor-bin
-  - neofetch
-  - ncmpcpp
-  - httpie
+  - bash-pipes
   - catimg
-  - mpdris2
-  - slurm
+  - chkservice
+  - chrome-gnome-shell-git
+  - fswebcam
+  - gnome-twitch-player-backend-gstreamer-opengl
+  - gtop
+  - httpie
   - lolcat
   - mpdris2
+  - mpdris2
+  - ncmpcpp
+  - neofetch
   - nerd-fonts-complete
   - netdiscover
-  - chkservice
-  - fswebcam
-  - python-stormssh
-  - python-speeed
-  - s-tui
   - peek
-  - bash-pipes
-  - gnome-twitch-player-backend-gstreamer-opengl
+  - python-speeed
+  - python-stormssh
+  - s-tui
+  - slurm
+  - vim-molokai
+  - xclip

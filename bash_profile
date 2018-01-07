@@ -1,4 +1,4 @@
-rhhehhehrthtrh#
+#
 # ~/.bash_profile
 #
 

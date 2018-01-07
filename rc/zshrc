@@ -7,48 +7,46 @@ source ~/dotfiles/sourced/exports
 antigen use oh-my-zsh
 antigen bundle robbyrussell/oh-my-zsh lib/
 
-
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle archlinux
-antigen bundle ssh-agent
-antigen bundle rupa/z
+antigen bundle ascii-soup/zsh-url-highlighter
+antigen bundle bric3/nice-exit-code
+antigen bundle catimg
 antigen bundle changyuheng/fz
+antigen bundle command-not-found
+antigen bundle desyncr/auto-ls
+antigen bundle dirhistory
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle extract
-antigen bundle gpg-agent
+antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
-antigen bundle pyenv
-antigen bundle systemd
-antigen bundle sudo
-antigen bundle tmux
+antigen bundle gpg-agent
 antigen bundle greymd/tmux-xpanes
-antigen bundle httpie
-antigen bundle catimg
-antigen bundle nyan
-antigen bundle lukechilds/zsh-better-npm-completion
-antigen bundle dirhistory
-antigen bundle git
-antigen bundle pip
-antigen bundle python
-antigen bundle virtualenv
-antigen bundle lein
-antigen bundle kubectl
-antigen bundle command-not-found
-antigen bundle desyncr/auto-ls
-antigen bundle zuxfoucault/colored-man-pages_mod
 antigen bundle horosgrisa/mysql-colorize
-antigen bundle man
-antigen bundle unixorn/autoupdate-antigen.zshplugin
-antigen bundle bric3/nice-exit-code
-antigen bundle psprint/history-search-multi-word
+antigen bundle httpie
 antigen bundle jreese/zsh-titles
-antigen bundle ascii-soup/zsh-url-highlighter
-# Syntax highlighting bundle.
+antigen bundle kubectl
+antigen bundle lein
+antigen bundle lukechilds/zsh-better-npm-completion
+antigen bundle man
+antigen bundle nyan
+antigen bundle pip
+antigen bundle psprint/history-search-multi-word
+antigen bundle pyenv
+antigen bundle python
+antigen bundle rupa/z
+antigen bundle ssh-agent
+antigen bundle sudo
+antigen bundle systemd
+antigen bundle tmux
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle virtualenv
 antigen bundle zdharma/fast-syntax-highlighting
-antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zuxfoucault/colored-man-pages_mod
 
 antigen theme gnzh
 

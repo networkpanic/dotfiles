@@ -1,3 +1,7 @@
 export TERMINAL=tilix
 export GPG_TTY=$(tty)
 export PATH=/home/$(whoami)/.gem/ruby/2.4.0/bin:$PATH
+export EDITOR='vim'
+
+# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
+export PYTHONIOENCODING='UTF-8'
