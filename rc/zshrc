@@ -23,7 +23,7 @@ antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
 antigen bundle gpg-agent
-antigen bundle greymd/tmux-xpanes
+# antigen bundle greymd/tmux-xpanes
 antigen bundle horosgrisa/mysql-colorize
 antigen bundle httpie
 antigen bundle jreese/zsh-titles
