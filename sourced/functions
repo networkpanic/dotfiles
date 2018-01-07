@@ -1,0 +1,9 @@
+lel () {
+  set -f
+  script -q -f  -c "lolcat --spread 0.8 -F 0.4 '$@'" | tee > "$@".lel
+  set +f
+}
+
+hgrep () {
+    history | egrep --color=auto --recursive "$@" | egrep --color=auto --recursive -v "hgrep $@"
+}
