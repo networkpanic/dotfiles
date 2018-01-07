@@ -19,21 +19,21 @@
 - link:
     ~/.antigen: antigen
     ~/.atom/config.cson: config/atom/config.cson
-    ~/.atom/styles.less: config/atom/styles.less
-    ~/.atom/snippets.cson: config/atom/snippets.cson
     ~/.atom/keymap.cson: config/atom/keymap.cson
+    ~/.atom/snippets.cson: config/atom/snippets.cson
+    ~/.atom/styles.less: config/atom/styles.less
     ~/.bash_profile: bash_profile
     ~/.bashrc: rc/bashrc
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
-    ~/.config/ranger: config/ranger
     ~/.config/neofetch: config/neofetch
+    ~/.config/ranger: config/ranger
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
+    ~/.git_template: config/git/git_template
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore: config/git/gitignore
-    ~/.git_template: config/git/git_template
-    ~/.gnupg/gpg.conf: config/gpg.conf
     ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
+    ~/.gnupg/gpg.conf: config/gpg.conf
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.nanorc:
       force: true
@@ -51,6 +51,7 @@
     ~/.zshrc: rc/zshrc
 
 - shell:
+  - ["script -q -c 'lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd' > ~/dotfiles/motd.lol", "Initial motd.lol"]  
   - [git submodule update --init --remote, Updating submodules]
   - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
   - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
