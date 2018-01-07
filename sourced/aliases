@@ -1,0 +1,15 @@
+alias ls="ls --color=auto --group-directories-first"
+alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
+alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
+
+alias hosts="sudo $EDITOR /etc/hosts"
+
+alias ip="curl ipinfo.io/ip"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+alias lc="lolcat"
+alias fs='fortune -as | cowsay -f small | lolcat'
+
+alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
+
+alias zshreload="antigen reset && exec /usr/bin/zsh -i"

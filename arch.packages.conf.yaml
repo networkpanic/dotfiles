@@ -23,6 +23,7 @@
   - ncdu
   - mplayer
   - imagemagick
+  - tree
 - pacaur:
   - asciimatics-git
   - chrome-gnome-shell-git

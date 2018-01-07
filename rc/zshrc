@@ -1,4 +1,7 @@
 source ~/.antigen/antigen.zsh
+source ~/dotfiles/sourced/aliases
+source ~/dotfiles/sourced/functions
+source ~/dotfiles/sourced/exports
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -40,30 +43,18 @@ antigen bundle man
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle bric3/nice-exit-code
 antigen bundle psprint/history-search-multi-word
-
+antigen bundle jreese/zsh-titles
+antigen bundle ascii-soup/zsh-url-highlighter
 # Syntax highlighting bundle.
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-
 antigen theme gnzh
-
 
 # Tell Antigen that you're done.
 antigen apply
 
-
-alias ls="ls --color=auto --group-directories-first"
-alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
-alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
-
-
-lel () {
-  set -f
-  script -q -f  -c "lolcat --spread 0.8 -F 0.4 '$@'" | tee > "$@".lel
-  set +f
-}
 
 
 if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
@@ -71,7 +62,3 @@ if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 fi
 
 cat  ~/dotfiles/motd.lol
-
-export TERMINAL=tilix
-export GPG_TTY=$(tty)
-export PATH=/home/$(whoami)/.gem/ruby/2.4.0/bin:$PATH
