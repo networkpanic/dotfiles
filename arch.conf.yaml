@@ -41,6 +41,7 @@
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
     ~/.ssh/config.d: private/ssh
+    ~/.tmux: config/tmux
     ~/.tmux.conf: config/tmux.conf
     ~/.vimrc: config/vimrc
     ~/.vim/bundle/Vundle.vim:
@@ -51,7 +52,6 @@
     ~/.zshrc: rc/zshrc
 
 - shell:
-  - ["script -q -c 'lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd' > ~/dotfiles/motd.lol", "Initial motd.lol"]  
   - [git submodule update --init --remote, Updating submodules]
   - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
   - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]

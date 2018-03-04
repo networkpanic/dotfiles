@@ -37,7 +37,7 @@ antigen bundle psprint/history-search-multi-word
 antigen bundle pyenv
 antigen bundle python
 antigen bundle rupa/z
-antigen bundle ssh-agent
+#antigen bundle ssh-agent
 antigen bundle sudo
 antigen bundle systemd
 antigen bundle tmux
@@ -47,7 +47,7 @@ antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zuxfoucault/colored-man-pages_mod
-
+antigen bundle thewtex/tmux-mem-cpu-load
 antigen theme gnzh
 
 # Tell Antigen that you're done.
@@ -60,3 +60,7 @@ if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 fi
 
 cat  ~/dotfiles/motd.lol
+
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye
