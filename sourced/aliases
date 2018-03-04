@@ -1,6 +1,6 @@
 alias fs='fortune -as | cowsay -f small | lolcat'
 alias hosts="sudo $EDITOR /etc/hosts"
-alias ip="curl ipinfo.io/ip"
+alias myip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias lc="lolcat"
 alias ls="ls --color=auto --group-directories-first"
