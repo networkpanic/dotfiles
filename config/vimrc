@@ -11,12 +11,16 @@ call vundle#begin('~/.vim/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jnurmine/Zenburn'
 Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'wellle/tmux-complete.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ap/vim-css-color'
-
+Plugin 'tpope/vim-fugitive'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/asyncomplete.vim'
 " colorschemes
 Plugin 'tomasr/molokai'
 
@@ -71,8 +75,19 @@ let g:molokai_original=1
 colorscheme molokai
 set background=dark
 let base16colorspace=256
-
-
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 highlight Normal guibg=black guifg=white
 highlight Normal ctermbg=none
+
+let g:tmuxcomplete#asyncomplete_source_options = {
+            \ 'name':      'tmuxcomplete',
+            \ 'whitelist': ['*'],
+            \ 'config': {
+            \     'splitmode':      'words',
+            \     'filter_prefix':   1,
+            \     'show_incomplete': 1,
+            \     'sort_candidates': 0,
+            \     'scrollback':      0,
+            \     'truncate':        0
+            \     }
+            \ }
