@@ -8,6 +8,10 @@ hgrep () {
     history | egrep --color=auto --recursive "$@" | egrep --color=auto --recursive -v "hgrep $@"
 }
 
+# Create subfolders from filenames
+mkdf() {
+for file in *.$@; do mkdir -- "${file%.'$@'}"; mv -- "$file" "${file%.'$@'}"; done
+}
 
 # Create a new directory and enter it
 function mkd() {

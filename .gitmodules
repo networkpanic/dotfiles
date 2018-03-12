@@ -1,18 +1,52 @@
 [submodule "nanorc"]
 	path = nanorc
 	url = https://github.com/nanorc/nanorc.git
+        branch = master
 [submodule "vim/Vundle.vim"]
 	path = vim/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
+        branch = master
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
+        branch = master
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts.git
+        branch = master
 [submodule "dotbot-pacaur"]
 	path = dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
+	branch = master
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
+	branch = master
+[submodule "config/tmux/plugins/tpm"]
+	path = config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+	branch = master
+[submodule "config/tmux/plugins/tmux-sensible"]
+	path = config/tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
+	branch = master
+[submodule "config/tmux/plugins/tmux-online-status"]
+	path = config/tmux/plugins/tmux-online-status
+	url = https://git::@github.com/tmux-plugins/tmux-online-status
+	branch = master
+[submodule "config/tmux/plugins/tmux-net-speed"]
+	path = config/tmux/plugins/tmux-net-speed
+	url = https://git::@github.com/tmux-plugins/tmux-net-speed
+	branch = master
+[submodule "config/tmux/plugins/tmux-cpu"]
+	path = config/tmux/plugins/tmux-cpu
+	url = https://git::@github.com/tmux-plugins/tmux-cpu
+	branch = master
+[submodule "config/tmux/plugins/tmux-battery"]
+	path = config/tmux/plugins/tmux-battery
+	url = https://git::@github.com/tmux-plugins/tmux-battery
+	branch = master
+[submodule "config/themes/Ant-Dracula"]
+	path = config/themes/Ant-Dracula
+	url = https://github.com/EliverLara/Ant-Dracula.git
+        branch = master

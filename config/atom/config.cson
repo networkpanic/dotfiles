@@ -5,10 +5,11 @@
       screenShake: true
   "atom-material-ui":
     colors:
-      abaseColor: "#236c34"
-      accentColor: "#901874"
+      abaseColor: "#cddc39"
+      accentColor: "#737f10"
       genAccent: true
       paintCursor: true
+      predefinedColor: "Lime"
     tabs:
       compactTabs: true
       noTabMinWidth: true
@@ -20,16 +21,21 @@
     autoHideMenuBar: true
     disabledPackages: [
       "language-gfm"
+      "ansible-vault"
+      "webbox-color"
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-material-ui"
-      "one-dark-syntax"
+      "glacier-dark-ui"
+      "atom-monokai"
     ]
   editor:
     fontSize: 16
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
+  "file-icons":
+    coloured: false
+  "glacier-dark-ui": {}
   "tool-bar": {}
   "tool-bar-markdown-writer":
     visibility: "showToolbarOnMarkdown"

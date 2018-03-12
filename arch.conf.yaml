@@ -10,6 +10,8 @@
   - '~/.gnupg'
   - '~/.vim'
   - '~/.atom'
+  - '~/.tmux'
+
 
 - shell:
   - [git pull origin master, Updating repo]
@@ -32,17 +34,16 @@
     ~/.git_template: config/git/git_template
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore: config/git/gitignore
-    ~/.gnupg/gpg-agent.conf: config/gpg-agent.conf
-    ~/.gnupg/gpg.conf: config/gpg.conf
+    ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
+    ~/.gnupg/gpg.conf: config/gnupg/gpg.conf
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.nanorc:
       force: true
       path: nanorc/build/ALL.nanorc
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
-    ~/.ssh/config.d: private/ssh
     ~/.tmux: config/tmux
-    ~/.tmux.conf: config/tmux.conf
+    ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc
     ~/.vim/bundle/Vundle.vim:
       force: true
@@ -64,4 +65,5 @@
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
   - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
-  - ["sh ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
+  - ["bash ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
+  - ["sudo chsh -s /usr/bin/zsh $(whoami)", "chsh to zsh"]

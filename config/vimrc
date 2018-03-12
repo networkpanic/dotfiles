@@ -21,6 +21,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'ryanoasis/vim-webdevicons'
+Plugin 'mhinz/vim-signify'
+
 " colorschemes
 Plugin 'tomasr/molokai'
 
@@ -45,6 +49,8 @@ set smarttab
 set ignorecase
 set incsearch
 set encoding=utf-8
+set nonumber
+
 
 set history=1000
 set undolevels=1000
@@ -58,7 +64,7 @@ set pastetoggle=<F2>
 set noswapfile
 set showmatch
 
-set list
+set nolist
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 nnoremap ; :
@@ -69,6 +75,10 @@ match OverLength /\%81v.\+/
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_airline_statusline = 1
+
 let g:rehash256=1
 
 let g:molokai_original=1
@@ -78,6 +88,13 @@ let base16colorspace=256
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 highlight Normal guibg=black guifg=white
 highlight Normal ctermbg=none
+
+" Start NERDTree
+autocmd VimEnter * NERDTree
+" Jump to the main window.
+autocmd VimEnter * wincmd w
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 let g:tmuxcomplete#asyncomplete_source_options = {
             \ 'name':      'tmuxcomplete',
