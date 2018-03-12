@@ -36,7 +36,8 @@
   "file-icons":
     coloured: false
   "glacier-dark-ui": {}
-  "tool-bar": {}
+  "tool-bar":
+    visible: false
   "tool-bar-markdown-writer":
     visibility: "showToolbarOnMarkdown"
   welcome:

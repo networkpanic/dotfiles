@@ -6,6 +6,7 @@
   - ebtables
   - etherape
   - ettercap-gtk
+  - fzy
   - fetchmirrors
   - git
   - gnome-mpv
@@ -37,15 +38,18 @@
   - wireshark-gtk
   - zsh
 - pacaur:
+  - archive-mounter
   - asciimatics-git
   - asciinema
   - atom-editor-bin
   - bash-pipes
+  - bcompare-nautilus
   - catimg
   - chkservice
   - chrome-gnome-shell-git
   - ctop
   - cuishark
+  - emojify
   - fortune-mod
   - fortune-mod-rickandmorty
   - fswebcam
@@ -54,6 +58,8 @@
   - httpie
   - lolcat
   - mpdris2
+  - nautilus-ext-git
+  - nautilus-renamer
   - ncmpcpp
   - neofetch
   - nerd-fonts-complete
