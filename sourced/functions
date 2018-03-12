@@ -31,3 +31,10 @@ function dataurl() {
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer;
 }
+
+
+tmateip () {
+  output=$(tmate show-message | grep -m 1 "Remote session:")
+  echo ${output#*session: } # display it
+  echo ${output#*session: } | pbcopy # and copy it to clipboard
+}
