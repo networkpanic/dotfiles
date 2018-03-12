@@ -4,6 +4,8 @@
   - curl
   - dnsmasq
   - ebtables
+  - etherape
+  - ettercap-gtk
   - fetchmirrors
   - git
   - gnome-mpv
@@ -32,6 +34,7 @@
   - vertex-themes
   - vim
   - virt-manager
+  - wireshark-gtk
   - zsh
 - pacaur:
   - asciimatics-git
@@ -41,6 +44,10 @@
   - catimg
   - chkservice
   - chrome-gnome-shell-git
+  - ctop
+  - cuishark
+  - fortune-mod
+  - fortune-mod-rickandmorty
   - fswebcam
   - gnome-twitch-player-backend-gstreamer-opengl
   - gtop
@@ -52,11 +59,11 @@
   - nerd-fonts-complete
   - netdiscover
   - peek
+  - ponysay
   - python-speeed
   - python-stormssh
   - s-tui
   - slurm
   - vim-molokai
+  - vocal
   - xclip
-  - fortune-mod-rickandmorty
-  - fortune-mod
