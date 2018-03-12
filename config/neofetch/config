@@ -22,28 +22,29 @@ printinfo() {
     # info "Uptime" uptime
     # info "Packages" packages
     info "Shell" shell
-    # info "Resolution" resolution
+    info "Resolution" resolution
     info "DE" de
     # info "WM" wm
     # info "WM Theme" wmtheme
     # info "Theme" theme
-    # info "Icons" icons
+    info "Icons" icons
     # info "Terminal" term
     # info "Terminal Font" termfont
     info "Model" model
     info "Uptime" uptime
     #info "Packages" packages
     #info "Resolution" resolution
-    info "CPU" cpu
     info "GPU" gpu
+    info "CPU" cpu
     info "Memory" memory
-
     info "CPU Usage" cpu_usage
     info "Disk" disk
     info "Battery" battery
     # info "Font" font
     info linebreak
     info "Song" song
+    info linebreak
+
     # info "Local IP" localip
     # info "Public IP" publicip
     # info "Users" users
@@ -52,6 +53,9 @@ printinfo() {
     # info linebreak
     # info cols
     # info linebreak
+    prin "Weather" "$(curl wttr.in/?0?q?T | awk '/°(C|F)/ {printf $(NF-1) $(NF) " ("a")"} /,/ {a=$0}')" &
+    wait
+
 }
 
 kernel_shorthand="on"
@@ -100,7 +104,7 @@ birthday_format="+%a %d %b %Y %l:%M %p"
 # colors=(4 6 1 8 8 6)
 # You can also specify:
 # fg (foreground color)
-colors=(1 3 4 2 2 9)
+colors=(1 3 4 2 2 12)
 
 
 # }}}
@@ -191,7 +195,7 @@ disk_display="off"
 
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
-image="wall"
+image="off"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"
@@ -264,7 +268,7 @@ ascii_colors=(6 7 3 8)
 # variant. Changing the value below to small
 # will make neofetch use the small logo.
 # --ascii_logo_size small, normal
-ascii_logo_size="small"
+ascii_logo_size="normal"
 
 # Bold ascii logo
 # Whether or not to bold the ascii logo.
