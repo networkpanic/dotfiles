@@ -66,4 +66,4 @@
   - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
   - ["bash ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
-  - ["sudo chsh -s /usr/bin/zsh $(whoami)", "chsh to zsh"]
+  - ["sudo chsh -s chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
