@@ -6,8 +6,8 @@
   - ebtables
   - etherape
   - ettercap-gtk
-  - fzy
   - fetchmirrors
+  - fzy
   - git
   - gnome-mpv
   - gnome-session-properties
@@ -29,6 +29,7 @@
   - ruby
   - ruby-bundler
   - scrot
+  - shellcheck
   - terminus-font
   - tmux
   - tree
