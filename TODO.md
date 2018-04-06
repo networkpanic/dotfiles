@@ -1,3 +1,42 @@
+
+# TODO
+
+## known issues
+ - lolcat install (RDoc is not installed)
+ - vim install ignore error (missing theme)
+ -
+
+## scripts
+ - execute dotbot parallel
+ - install gnome extensions from git
+ - generate login banner with figlet
+
+## add config and packages
+ - hexchat
+ - emulationstation
+ - libvirt, virt-manager, ebtables, dnsmasq
+ - docker (aliases for phpqa and others)
+ - kodi
+ - conky
+ - samba usershare
+ - dconf stuff
+ - docs
+
+## aliases and functions
+ - push files from shell to telegram-desktop
+
+
+dotbot
+
+https://github.com/qobilidop/dotbot-env
+https://github.com/sobolevn/dotbot-pip
+https://github.com/vbrandl/dotfiles
+https://github.com/magicmonty/dotfiles_dotbot
+https://github.com/mstrzele/dotfiles
+https://github.com/anishathalye/dotbot/
+
+
+
 Convert directory of videos to MP4 in parallel
  $ for INPUT in *.avi ; do echo "${INPUT%.avi}" ; done | xargs -i -P9  HandBrakeCLI -i "{}".avi -o "{}".mp4
 
@@ -29,14 +68,3 @@ Send a file by email as attachment
  Create fattal tone mapped images from a directory of raw images
  $ for img in /path/to/rawimages/*.RW2; do pfsin ${img} | pfssize -x 1024 -y 768 | pfstmo_fattal02 -v -s 1 | pfsout /path/to/finished/${img%%}.jpg; done
 — by mmaki on June 3, 2013, 10:45 p.m.
-
-
-
-dotbot
-
-https://github.com/qobilidop/dotbot-env
-https://github.com/sobolevn/dotbot-pip
-https://github.com/vbrandl/dotfiles
-https://github.com/magicmonty/dotfiles_dotbot
-https://github.com/mstrzele/dotfiles
-https://github.com/anishathalye/dotbot/
