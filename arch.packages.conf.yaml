@@ -39,13 +39,13 @@
   - virt-manager
   - wireshark-gtk
   - zsh
+  - go
 - pacaur:
   - archive-mounter
   - asciimatics-git
   - asciinema
   - atom-editor-bin
   - bash-pipes
-  - bcompare-nautilus
   - catimg
   - chkservice
   - chrome-gnome-shell-git
@@ -72,6 +72,7 @@
   - python-stormssh
   - s-tui
   - slurm
+  - tewisay-git
   - vim-molokai
   - vocal
   - xclip
