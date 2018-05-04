@@ -5,6 +5,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+	pager = diff-so-fancy
 [color]
 	ui = auto
 [http "https://gopkg.in"]
