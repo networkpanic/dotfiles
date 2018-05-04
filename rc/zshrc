@@ -50,6 +50,7 @@ antigen bundle tmux
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle virtualenv
 antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zdharma/zsh-diff-so-fancy
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zuxfoucault/colored-man-pages_mod

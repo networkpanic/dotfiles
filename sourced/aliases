@@ -11,3 +11,4 @@ alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
 alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
 alias zshreload="antigen reset && exec /usr/bin/zsh -i"
+alias gotop='TERM=screen gotop'
