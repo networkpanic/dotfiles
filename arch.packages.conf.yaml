@@ -1,73 +1,99 @@
 - pacman:
-  - asciinema
-  - cowsay
-  - curl
-  - conky
-  - dnsmasq
-  - ebtables
-  - etherape
-  - ettercap-gtk
-  - fzy
-  - git
-  - gnome-mpv
-  - gnome-session-properties
-  - gnome-shell-extension-installer
-  - htop
-  - imagemagick
-  - iotop
-  - libvirt
-  - meld
-  - mpd
-  - mplayer
-  - mtr
-  - ncdu
-  - nethogs
-  - ponysay
-  - qemu
-  - qt5-styleplugins
-  - qt5ct
-  - reflector
-  - rsync
-  - ruby
-  - ruby-bundler
-  - scrot
-  - shellcheck
-  - terminus-font
-  - tmux
-  - tree
-  - vim
-  - virt-manager
-  - wireshark-gtk
-  - zsh
-  - go
-- pacaur:
   - archive-mounter
+  - aria2
+  - asciinema
   - atom-editor-bin
   - bash-pipes
   - catimg
   - chkservice
+  - conky
+  - corebird
+  - cowsay
   - ctop
   - cuishark
+  - curl
+  - dconf-editor
+  - dnsmasq
+  - ebtables
   - emojify
+  - etherape
+  - ettercap-gtk
+  - feedreader
+  - flatpak
+  - flatpak-builder
   - fortune-mod
   - fswebcam
+  - fzy
+  - gconf-editor
+  - git
+  - gnome-mpv
+  - gnome-session-properties
+  - gnome-shell-extension-installer
   - gnome-twitch-player-backend-gstreamer-opengl
+  - go
   - gtop
+  - hexchat
+  - htop
   - httpie
+  - imagemagick
+  - iotop
+  - keepassxc
+  - kodi
+  - kupfer
+  - libu2f-host
+  - libvirt
   - lolcat
+  - meld
+  - mpd
   - mpdris2
+  - mplayer
+  - mtr
   - nautilus-renamer
+  - ncdu
   - ncmpcpp
   - neofetch
   - nerd-fonts-complete
   - netdiscover
+  - nethogs
+  - pcsc-tools
   - peek
+  - pigz
   - ponysay
+  - ponysay
+  - powertop
   - python-speeed
   - python-stormssh
+  - qemu
+  - qt5-styleplugins
+  - qt5ct
+  - quicksynergy
+  - reflector
+  - retroarch
+  - rsync
+  - ruby
+  - ruby-bundler
   - s-tui
+  - scrot
+  - seahorse
+  - shellcheck
   - slurm
+  - sshfs
+  - sysprof
+  - terminus-font
+  - terminus-font
   - tewisay-git
+  - tilix-bin
+  - tmate
+  - tmux
+  - tree
   - vertex-themes
+  - vim
+  - virt-manager
   - vocal
+  - wireshark-gtk
   - xclip
+  - yubico-pam
+  - yubikey-manager
+  - yubikey-manager-qt
+  - yubikey-personalization-gui
+  - zsh
