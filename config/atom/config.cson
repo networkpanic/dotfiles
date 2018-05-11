@@ -23,6 +23,7 @@
       "language-gfm"
       "ansible-vault"
       "webbox-color"
+      "autocomplete-ansible"
     ]
     telemetryConsent: "no"
     themes: [

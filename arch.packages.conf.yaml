@@ -6,7 +6,6 @@
   - ebtables
   - etherape
   - ettercap-gtk
-  - fetchmirrors
   - fzy
   - git
   - gnome-mpv
@@ -26,6 +25,7 @@
   - qemu
   - qt5-styleplugins
   - qt5ct
+  - reflector
   - rsync
   - ruby
   - ruby-bundler
@@ -34,7 +34,6 @@
   - terminus-font
   - tmux
   - tree
-  - vertex-themes
   - vim
   - virt-manager
   - wireshark-gtk
@@ -42,25 +41,20 @@
   - go
 - pacaur:
   - archive-mounter
-  - asciimatics-git
-  - asciinema
   - atom-editor-bin
   - bash-pipes
   - catimg
   - chkservice
-  - chrome-gnome-shell-git
   - ctop
   - cuishark
   - emojify
   - fortune-mod
-  - fortune-mod-rickandmorty
   - fswebcam
   - gnome-twitch-player-backend-gstreamer-opengl
   - gtop
   - httpie
   - lolcat
   - mpdris2
-  - nautilus-ext-git
   - nautilus-renamer
   - ncmpcpp
   - neofetch
@@ -73,6 +67,6 @@
   - s-tui
   - slurm
   - tewisay-git
-  - vim-molokai
+  - vertex-themes
   - vocal
   - xclip

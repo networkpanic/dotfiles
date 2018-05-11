@@ -30,6 +30,7 @@
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
     ~/.config/ranger: config/ranger
+    ~/.config/retroarch: config/retroarch
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.git_template: config/git/git_template
     ~/.gitconfig: config/git/gitconfig
@@ -66,5 +67,6 @@
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
   - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
+  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
   - ["bash ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
   - ["sudo chsh -s chsh -s $(which zsh) $(whoami)", "chsh to zsh"]

@@ -49,12 +49,14 @@
 [submodule "config/themes/Ant-Dracula"]
 	path = config/themes/Ant-Dracula
 	url = https://github.com/EliverLara/Ant-Dracula.git
-        branch = master
+  branch = master
 [submodule "rc/zsh_custom/plugins/enhancd"]
 	path = rc/zsh_custom/plugins/enhancd
 	url = https://github.com/b4b4r07/enhancd
-        branch = master
-
+  branch = master
 [submodule "scripts/login-background"]
 	path = scripts/login-background
 	url = https://github.com/uttarayan21/login-background.git
+[submodule "themes/vertex-theme"]
+	path = themes/vertex-theme
+	url = https://github.com/horst3180/vertex-theme
