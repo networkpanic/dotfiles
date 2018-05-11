@@ -13,8 +13,6 @@
 
 ## add config and packages
  - hexchat
- - emulationstation
- - libvirt, virt-manager, ebtables, dnsmasq
  - docker (aliases for phpqa and others)
  - kodi
  - conky
