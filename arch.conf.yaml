@@ -30,7 +30,7 @@
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
     ~/.config/ranger: config/ranger
-    ~/.config/retroarch: config/retroarch
+    ~/.config/retroarch/retroarch.cfg: config/retroarch/retroarch.cfg
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.git_template: config/git/git_template
     ~/.gitconfig: config/git/gitconfig
