@@ -2,9 +2,9 @@ source ~/.antigen/antigen.zsh
 source ~/dotfiles/sourced/aliases
 source ~/dotfiles/sourced/functions
 source ~/dotfiles/sourced/exports
-if [[ -v ZSH_PROF ]]; then
-  zmodload zsh/zprof
-fi
+#if [[ -v ZSH_PROF ]]; then
+#  zmodload zsh/zprof
+#fi
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 antigen bundle robbyrussell/oh-my-zsh lib/
@@ -13,7 +13,6 @@ antigen bundle robbyrussell/oh-my-zsh lib/
 antigen bundle archlinux
 antigen bundle ascii-soup/zsh-url-highlighter
 antigen bundle b4b4r07/emoji-cli
-antigen bundle b4b4r07/enhancd, use:init.sh
 antigen bundle bric3/nice-exit-code
 antigen bundle catimg
 antigen bundle changyuheng/fz
@@ -28,7 +27,7 @@ antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
 antigen bundle gpg-agent
-antigen bundle greymd/tmux-xpanes
+#antigen bundle greymd/tmux-xpanes
 antigen bundle horosgrisa/mysql-colorize
 antigen bundle httpie
 antigen bundle jreese/zsh-titles

@@ -1,7 +1,6 @@
 [user]
 	name = Martin Friedrich
-	email = martin.friedrich@draglet.com
-	signingkey = C5CD2E361521E91503ADF9EF99108392367F2A76
+	email = npanic@kmpt.nz
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
@@ -17,7 +16,7 @@
 [diff]
 	tool = meld
 [difftool]
-	prompt = false
+	prompt = true
 [gitflow "prefix"]
 	feature = feature-
 	release = release-
@@ -25,8 +24,8 @@
 	support = support-
 	versiontag = v
 [alias]
- hist = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
- graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+  hist = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [hooks]
 	global = /home/npanic/dev/git-config/contrib/
 [cola]
