@@ -10,6 +10,7 @@ Host *
 Host *+*
     ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;/+/!{s/%%/@/;s/:/ -p /};s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/') PATH=.:\$PATH nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
     #ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') exec nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
+    forwardagent yes
 
 Host acidhouse
    port 2222
