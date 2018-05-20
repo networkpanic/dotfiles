@@ -24,6 +24,7 @@
       "ansible-vault"
       "webbox-color"
       "autocomplete-ansible"
+      "linter"
     ]
     telemetryConsent: "no"
     themes: [
