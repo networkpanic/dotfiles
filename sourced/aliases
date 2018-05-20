@@ -12,3 +12,4 @@ alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
 alias zshreload="antigen reset && exec /usr/bin/zsh -i"
 alias gotop='TERM=screen gotop'
+alias srip='spotify-ripper --all-artists -b 320 -f "{album_artist}/{album}/{artist} - {track_name}.{ext}"  --large-cover-art -d ~/Music -l'
