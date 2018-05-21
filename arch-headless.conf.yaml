@@ -1,0 +1,56 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+  - '~'
+  - '~/.config'
+  - '~/.gnupg'
+  - '~/.vim'
+  - '~/.tmux'
+
+
+- shell:
+  - [git pull origin master, Updating repo]
+  - [git submodule update --init --recursive, Installing submodules]
+  - ["make -C nanorc", "Setting up nanorc"]
+
+- link:
+    ~/.antigen: antigen
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: rc/bashrc
+    ~/.config/htop: config/htop
+    ~/.config/neofetch: config/neofetch
+    ~/.config/ranger: config/ranger
+    ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
+    ~/.git_template: config/git/git_template
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitignore: config/git/gitignore
+    ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
+    ~/.gnupg/gpg.conf: config/gnupg/gpg.conf
+    ~/.mpd/mpd.conf: config/mpd/mpd.conf
+    ~/.nanorc:
+      force: true
+      path: nanorc/build/ALL.nanorc
+    ~/.ssh/config: config/ssh/config
+    ~/scripts: scripts
+    ~/.tmux: config/tmux
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.vimrc: config/vimrc
+    ~/.vim/bundle/Vundle.vim:
+      force: true
+      relink: true
+      path: vim/Vundle.vim
+    ~/.Xresources: Xresources
+    ~/.zshrc: rc/zshrc
+
+- shell:
+  - [git submodule update --init --remote, Updating submodules]
+  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch.packages.conf.yaml -d .
+    stdin: true
+    stdout: true
+  - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
+  - ["sudo chsh -s chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
