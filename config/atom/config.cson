@@ -25,6 +25,7 @@
       "webbox-color"
       "autocomplete-ansible"
       "linter"
+      "markdown-preview"
     ]
     telemetryConsent: "no"
     themes: [
@@ -32,14 +33,14 @@
       "atom-monokai"
     ]
   editor:
-    fontSize: 16
+    fontFamily: "Roboto"
+    fontSize: 13
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
   "file-icons":
     coloured: false
   "glacier-dark-ui": {}
-  "tool-bar":
-    visible: false
+  "tool-bar": {}
   "tool-bar-markdown-writer":
     visibility: "showToolbarOnMarkdown"
   welcome:
