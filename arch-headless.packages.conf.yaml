@@ -3,16 +3,13 @@
   - chkservice
   - cowsay
   - ctop
-  - cuishark
   - curl
   - dnsmasq
-  - dutree
   - ebtables
   - fortune-mod
   - fzy
-  - git
   - go
-  - gtop
+  - gotop
   - htop
   - httpie
   - iotop
@@ -33,7 +30,6 @@
   - slurm
   - sshfs
   - sysprof
-  - terminus-font
   - tewisay-git
   - tmate
   - tmux
