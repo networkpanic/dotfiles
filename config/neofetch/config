@@ -28,13 +28,11 @@ printinfo() {
     # info "WM Theme" wmtheme
     # info "Theme" theme
     info "Icons" icons
-    #info "Terminal" term
-    #info "Terminal Font" termfont
+    # info "Terminal" term
+    # info "Terminal Font" termfont
     info "Model" model
-    info "Uptime" uptime
-    info "Packages" packages
     info "Resolution" resolution
-    info "GPU" gpu
+    # info "GPU" gpu
     info "CPU" cpu
     info "Memory" memory
     info "CPU Usage" cpu_usage
@@ -53,14 +51,11 @@ printinfo() {
     # info linebreak
     # info cols
     # info linebreak
-    wait
-
 }
 
 kernel_shorthand="on"
 distro_shorthand="on"
 os_arch="off"
-
 
 uptime_shorthand="on"
 
@@ -68,7 +63,6 @@ shell_path="off"
 shell_version="off"
 
 # CPU
-
 speed_type="bios"
 cpu_shorthand="tiny"
 cpu_display="off"
@@ -89,7 +83,6 @@ song_shorthand="on"
 birthday_shorthand="off"
 birthday_time="on"
 birthday_format="+%a %d %b %Y %l:%M %p"
-
 
 # }}}
 

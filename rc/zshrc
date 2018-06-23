@@ -2,10 +2,16 @@ source ~/.antigen/antigen.zsh
 source ~/dotfiles/sourced/aliases
 source ~/dotfiles/sourced/functions
 source ~/dotfiles/sourced/exports
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+
 #if [[ -v ZSH_PROF ]]; then
 #  zmodload zsh/zprof
 #fi
 # Load the oh-my-zsh's library.
+
 antigen use oh-my-zsh
 antigen bundle robbyrussell/oh-my-zsh lib/
 
@@ -28,11 +34,12 @@ antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
 antigen bundle gpg-agent
-#antigen bundle greymd/tmux-xpanes
+antigen bundle greymd/tmux-xpanes
 antigen bundle horosgrisa/mysql-colorize
 antigen bundle httpie
 antigen bundle jreese/zsh-titles
 antigen bundle kubectl
+antigen bundle minikube
 antigen bundle lein
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle man

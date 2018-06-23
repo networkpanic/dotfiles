@@ -15,7 +15,6 @@
 - shell:
   - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
-  - ["make -C nanorc", "Setting up nanorc"]
 
 - link:
     ~/.antigen: antigen
@@ -48,7 +47,7 @@
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
-  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch.packages.conf.yaml -d .
+  - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch-headless.packages.conf.yaml -d .
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]

@@ -17,6 +17,8 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "better-git-blame":
+    searchInLayerEnabled: false
   core:
     autoHideMenuBar: true
     disabledPackages: [
@@ -33,12 +35,18 @@
       "atom-monokai"
     ]
   editor:
-    fontFamily: "Roboto"
-    fontSize: 13
+    fontSize: 22
   "exception-reporting":
     userId: "c9957250-16c1-8861-898e-a3ea61a5368b"
   "file-icons":
     coloured: false
+  "git-blame":
+    columnWidth: 118
+  gitlab:
+    privateToken: "b7rmzbxw4KNXEn3gs8W9"
+    serverUrl: "https://gitlab.daypaio.com"
+  "gitlab-integration":
+    token: "b7rmzbxw4KNXEn3gs8W9"
   "glacier-dark-ui": {}
   "tool-bar": {}
   "tool-bar-markdown-writer":
