@@ -3,22 +3,22 @@
   - aria2
   - asciinema
   - atom-editor-bin
+  - aurvote
   - bash-pipes
   - catimg
+  - ccze
   - chkservice
+  - cointop
   - conky
   - corebird
   - cowsay
   - ctop
-  - cuishark
   - curl
   - dconf-editor
   - dnsmasq
-  - dutree
   - ebtables
   - emojify
   - etherape
-  - ettercap-gtk
   - feedreader
   - flatpak
   - flatpak-builder
@@ -26,13 +26,13 @@
   - fswebcam
   - fzy
   - gconf-editor
-  - git
+  - gitflow-avh
   - gnome-mpv
   - gnome-session-properties
   - gnome-shell-extension-installer
   - gnome-twitch-player-backend-gstreamer-opengl
   - go
-  - gtop
+  - gotop
   - hexchat
   - htop
   - httpie
@@ -44,6 +44,7 @@
   - libu2f-host
   - libvirt
   - lolcat
+  - mdp-git
   - meld
   - mpd
   - mpdris2
@@ -60,10 +61,7 @@
   - peek
   - pigz
   - ponysay
-  - ponysay
   - powertop
-  - python-speeed
-  - python-stormssh
   - qemu
   - qt5-styleplugins
   - qt5ct
@@ -78,11 +76,12 @@
   - seahorse
   - shellcheck
   - slurm
+  - spotify
   - sshfs
   - sysprof
   - terminus-font
-  - terminus-font
   - tewisay-git
+  - tig
   - tilix-bin
   - tmate
   - tmux
@@ -92,7 +91,9 @@
   - virt-manager
   - vocal
   - wireshark-gtk
+  - wpscan
   - xclip
+  - youtube-viewer
   - yubico-pam
   - yubikey-manager
   - yubikey-manager-qt
