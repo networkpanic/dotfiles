@@ -1,4 +1,4 @@
 #!/bin/sh
 ### lolcommits hook (begin) ###
-LOLCOMMITS_DIR="~/Nextcloud/lolcommits" LANG="en_US.UTF-8" && PATH="/usr/bin:/usr/bin:$PATH" && if [ ! -d "$GIT_DIR/rebase-merge" ] && [ "$LOLCOMMITS_CAPTURE_DISABLED" != "true" ]; then lolcommits --capture --delay 2 --animate 5 --fork; fi
+LOLCOMMITS_DIR="~/Nextcloud/lol" LANG="en_US.UTF-8" && PATH="/usr/bin:/usr/bin:$PATH" && if [ ! -d "$GIT_DIR/rebase-merge" ] && [ "$LOLCOMMITS_CAPTURE_DISABLED" != "true" ]; then lolcommits --capture --delay 2 --animate 5 --fork; fi
 ###  lolcommits hook (end)  ###
