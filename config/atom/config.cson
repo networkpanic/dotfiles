@@ -48,7 +48,8 @@
   "gitlab-integration":
     token: "b7rmzbxw4KNXEn3gs8W9"
   "glacier-dark-ui": {}
-  "tool-bar": {}
+  "tool-bar":
+    visible: false
   "tool-bar-markdown-writer":
     visibility: "showToolbarOnMarkdown"
   welcome:
