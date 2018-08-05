@@ -2,7 +2,6 @@
   - archive-mounter
   - aria2
   - asciinema
-  - atom-editor-bin
   - aurvote
   - bash-pipes
   - catimg
@@ -81,7 +80,7 @@
   - terminus-font
   - tewisay-git
   - tig
-  - tilix-bin
+  - tilix
   - tmate
   - tmux
   - tree

@@ -9,21 +9,15 @@
   - '~/.config'
   - '~/.gnupg'
   - '~/.vim'
-  - '~/.atom'
   - '~/.tmux'
 
 
 - shell:
   - [git pull origin master, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
-  - ["make -C nanorc", "Setting up nanorc"]
-
+ 
 - link:
     ~/.antigen: antigen
-    ~/.atom/config.cson: config/atom/config.cson
-    ~/.atom/keymap.cson: config/atom/keymap.cson
-    ~/.atom/snippets.cson: config/atom/snippets.cson
-    ~/.atom/styles.less: config/atom/styles.less
     ~/.bash_profile: bash_profile
     ~/.bashrc: rc/bashrc
     ~/.config/cava: config/cava
@@ -39,9 +33,6 @@
     ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
     ~/.gnupg/gpg.conf: config/gnupg/gpg.conf
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
-    ~/.nanorc:
-      force: true
-      path: nanorc/build/ALL.nanorc
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
     ~/scripts: scripts
@@ -66,7 +57,6 @@
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
-  - ["apm install --packages-file ~/dotfiles/config/atom/packages", "Installing Atom packages"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
   - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
   - ["bash ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
