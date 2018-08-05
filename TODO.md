@@ -2,14 +2,12 @@
 # TODO
 
 ## known issues
- - lolcat install (RDoc is not installed)
  - vim install ignore error (missing theme)
  -
 
 ## scripts
  - execute dotbot parallel
  - install gnome extensions from git
- - generate login banner with figlet
 
 ## add config and packages
  - hexchat
