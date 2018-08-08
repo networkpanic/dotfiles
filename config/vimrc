@@ -91,7 +91,7 @@ let g:webdevicons_enable_airline_statusline = 1
 let g:rehash256=1
 
 let g:molokai_original=1
-colorscheme molokai
+silent! colorscheme molokai
 set background=dark
 let base16colorspace=256
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null

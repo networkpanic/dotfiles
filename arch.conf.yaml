@@ -60,4 +60,4 @@
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
   - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
   - ["bash ~/dotfiles/config/gnome/extensions", "Installing gnome extensions"]
-  - ["sudo chsh -s chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
+  - ["sudo chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
