@@ -56,3 +56,6 @@
 [submodule "themes/vertex-theme"]
 	path = themes/vertex-theme
 	url = https://github.com/horst3180/vertex-theme
+[submodule "vim/SpaceVim"]
+	path = vim/SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim.git
