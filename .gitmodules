@@ -59,3 +59,6 @@
 [submodule "vim/SpaceVim"]
 	path = vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
+[submodule "scripts"]
+	path = scripts
+	url = git@gitlab.com:acidhunter/scripts.git
