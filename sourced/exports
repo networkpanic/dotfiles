@@ -3,6 +3,6 @@ export GPG_TTY=$(tty)
 export PATH=/home/$(whoami)/.gem/ruby/2.5.0/bin:$PATH
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export TERMINAL=tilix
-
+export PATH=$PATH:/opt/flutter/bin
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8'
