@@ -41,7 +41,6 @@ antigen bundle lein
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle man
 antigen bundle MichaelAquilina/zsh-emojis
-antigen bundle nyan
 antigen bundle pip
 antigen bundle psprint/history-search-multi-word
 antigen bundle pyenv
