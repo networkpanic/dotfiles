@@ -1,4 +1,5 @@
 - pacman:
+  - nnn
   - archive-mounter
   - aria2
   - asciinema
@@ -9,7 +10,6 @@
   - chkservice
   - cointop
   - conky
-  - corebird
   - cowsay
   - ctop
   - curl
@@ -17,7 +17,6 @@
   - dnsmasq
   - ebtables
   - emojify
-  - etherape
   - feedreader
   - flatpak
   - flatpak-builder
@@ -48,8 +47,6 @@
   - mpd
   - mplayer
   - mtr
-  - nautilus-renamer
-  - ncdu
   - ncmpcpp
   - neofetch
   - nerd-fonts-complete
