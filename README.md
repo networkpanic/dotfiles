@@ -25,8 +25,6 @@ Installation
 Todo
 -----------
 
- - LANG check
- - config non user stuff (sudoers, fontconfig)
  - gpg encrypted history-sync
  - better ssh config handling
  - add missing gnome extensions
