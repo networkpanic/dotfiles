@@ -18,8 +18,8 @@
 
 - link:
     ~/.antigen: antigen
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: rc/bashrc
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/rc/bashrc
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
@@ -45,8 +45,8 @@
       force: true
       relink: true
       path: vim/Vundle.vim
-    ~/.Xresources: Xresources
-    ~/.zshrc: rc/zshrc
+    ~/.Xresources: config/Xresources
+    ~/.zshrc: config/rc/zshrc
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
