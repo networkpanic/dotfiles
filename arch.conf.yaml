@@ -13,9 +13,9 @@
 
 
 - shell:
-  - [git pull origin master, Updating repo]
+#  - [git pull origin, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
- 
+
 - link:
     ~/.antigen: antigen
     ~/.bash_profile: bash_profile
@@ -37,7 +37,7 @@
     ~/.ssh/config: config/ssh/config
     ~/scripts: scripts
     ~/.SpaceVim: vim/SpaceVim
-    ~/.config/nvim: vim/SpaceVim 
+    ~/.config/nvim: vim/SpaceVim
     ~/.tmux: config/tmux
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc

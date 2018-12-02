@@ -1,6 +1,9 @@
 #
 # ~/.bashrc
 #
+source ~/dotfiles/sourced/aliases
+source ~/dotfiles/sourced/functions
+source ~/dotfiles/sourced/exports
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

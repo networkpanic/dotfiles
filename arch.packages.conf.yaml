@@ -1,8 +1,6 @@
 - pacman:
-  - nnn
   - archive-mounter
   - aria2
-  - exa
   - asciinema
   - aurvote
   - bash-pipes
@@ -18,6 +16,7 @@
   - dnsmasq
   - ebtables
   - emojify
+  - exa
   - feedreader
   - flatpak
   - flatpak-builder
@@ -53,11 +52,13 @@
   - nerd-fonts-complete
   - netdiscover
   - nethogs
+  - nnn
   - pcsc-tools
   - peek
   - pigz
   - ponysay
   - powertop
+  - python-pyfiglet
   - qemu
   - qt5-styleplugins
   - qt5ct
