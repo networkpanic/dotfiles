@@ -13,13 +13,13 @@
 
 
 - shell:
-  - [git pull origin master, Updating repo]
+#  - [git pull origin, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
- 
+
 - link:
     ~/.antigen: antigen
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: rc/bashrc
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/rc/bashrc
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
@@ -37,7 +37,7 @@
     ~/.ssh/config: config/ssh/config
     ~/scripts: scripts
     ~/.SpaceVim: vim/SpaceVim
-    ~/.config/nvim: vim/SpaceVim 
+    ~/.config/nvim: vim/SpaceVim
     ~/.tmux: config/tmux
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc
@@ -45,8 +45,8 @@
       force: true
       relink: true
       path: vim/Vundle.vim
-    ~/.Xresources: Xresources
-    ~/.zshrc: rc/zshrc
+    ~/.Xresources: config/Xresources
+    ~/.zshrc: config/rc/zshrc
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]

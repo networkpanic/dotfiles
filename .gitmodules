@@ -42,10 +42,6 @@
 	path = config/tmux/plugins/tmux-battery
 	url = https://git::@github.com/tmux-plugins/tmux-battery
 	branch = master
-[submodule "rc/zsh_custom/plugins/enhancd"]
-	path = rc/zsh_custom/plugins/enhancd
-	url = https://github.com/b4b4r07/enhancd
-  branch = master
 [submodule "scripts/login-background"]
 	path = scripts/login-background
 	url = https://github.com/uttarayan21/login-background.git
