@@ -1,7 +1,7 @@
 source ~/.antigen/antigen.zsh
-source ~/dotfiles/sourced/aliases
-source ~/dotfiles/sourced/functions
-source ~/dotfiles/sourced/exports
+source ~/dotfiles/config/sourced/aliases
+source ~/dotfiles/config/sourced/functions
+source ~/dotfiles/config/sourced/exports
 
 
 #if [[ -v ZSH_PROF ]]; then
