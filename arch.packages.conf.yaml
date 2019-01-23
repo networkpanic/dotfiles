@@ -37,6 +37,8 @@
   - keepassxc
   - kodi
   - kupfer
+  - kubectl-bin
+  - kubernetes-helm
   - libu2f-host
   - libvirt
   - lolcat
