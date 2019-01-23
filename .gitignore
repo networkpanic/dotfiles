@@ -44,3 +44,4 @@ __pycache__
 *.lol
 config/ranger/history
 config/ranger/bookmarks
+motd
