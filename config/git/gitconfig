@@ -1,6 +1,7 @@
 [user]
 	name = Martin Friedrich
-	email = npanic@kmpt.nz
+	email = mf@zeuz.io
+	signingkey = B2562BB1
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
