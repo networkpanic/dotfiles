@@ -14,10 +14,11 @@
   - curl
   - dconf-editor
   - dnsmasq
+  - docker
   - ebtables
   - emojify
   - exa
-  - feedreader
+  - feedreader-git
   - flatpak
   - fortune-mod
   - fswebcam
@@ -27,7 +28,6 @@
   - gnome-mpv
   - gnome-session-properties
   - gnome-shell-extension-installer
-  - gnome-twitch-player-backend-gstreamer-opengl
   - gotop
   - hexchat
   - htop
@@ -36,9 +36,9 @@
   - iotop
   - keepassxc
   - kodi
-  - kupfer
   - kubectl-bin
   - kubernetes-helm
+  - kupfer
   - libu2f-host
   - libvirt
   - lolcat
@@ -47,6 +47,7 @@
   - mtr
   - ncmpcpp
   - neofetch
+  - neovim
   - nerd-fonts-complete
   - netdiscover
   - nethogs
@@ -60,20 +61,18 @@
   - qemu
   - qt5-styleplugins
   - qt5ct
-  - quicksynergy
   - reflector
   - retroarch
   - rsync
   - ruby
   - ruby-bundler
-  - s-tui
   - scrot
   - seahorse
   - shellcheck
-  - slurm
   - spotify
   - sshfs
   - sysprof
+  - telegram-desktop
   - terminus-font
   - tewisay-git
   - tig
@@ -87,9 +86,4 @@
   - wpscan
   - xclip
   - youtube-viewer
-  - yubico-pam
-  - yubikey-manager
-  - yubikey-manager-qt
-  - yubikey-personalization-gui
   - zsh
-  - neovim
