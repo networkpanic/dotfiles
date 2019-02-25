@@ -51,3 +51,6 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://gitlab.com/npanic/scripts.git
+[submodule "dotbot-vscode"]
+	path = dotbot-vscode
+	url = https://github.com/hujianxin/dotbot-vscode

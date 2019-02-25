@@ -54,6 +54,9 @@ antigen bundle sparsick/ansible-zsh
 antigen bundle sudo
 antigen bundle systemd
 antigen bundle thewtex/tmux-mem-cpu-load
+antigen bundle terraform
+antigen bundle vagrant
+antigen bundle vagrant-prompt
 antigen bundle tmux
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle virtualenv
@@ -68,13 +71,10 @@ antigen theme gnzh
 antigen apply
 
 
-
 if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
   script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
 fi
 
 cat  ~/dotfiles/motd.lol
 
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
-gpg-connect-agent updatestartuptty /bye
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
