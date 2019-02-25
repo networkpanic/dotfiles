@@ -1,14 +1,21 @@
 - pacman:
+  - android-studio
+  - android-tools
+  - ansible
   - archive-mounter
   - aria2
   - asciinema
   - aurvote
   - bash-pipes
+  - bookworm-git
   - catimg
+  - cava
   - ccze
   - chkservice
+  - cmatrix
   - cointop
   - conky
+  - corebird-non-streaming-git
   - cowsay
   - ctop
   - curl
@@ -28,20 +35,19 @@
   - gnome-mpv
   - gnome-session-properties
   - gnome-shell-extension-installer
-  - gotop
+  - gotop-bin
   - hexchat
   - htop
   - httpie
   - imagemagick
   - iotop
-  - keepassxc
   - kodi
   - kubectl-bin
-  - kubernetes-helm
+  - kubernetes-helm-bin
   - kupfer
-  - libu2f-host
   - libvirt
   - lolcat
+  - materia-theme-git  
   - meld
   - mpd
   - mtr
@@ -52,12 +58,17 @@
   - netdiscover
   - nethogs
   - nnn
+  - pamac-aur
   - pcsc-tools
   - peek
   - pigz
+  - pkgconf
   - ponysay
+  - powershell-bin
   - powertop
   - python-pyfiglet
+  - python-pywinrm
+  - python2-pywinrm
   - qemu
   - qt5-styleplugins
   - qt5ct
@@ -65,25 +76,35 @@
   - retroarch
   - rsync
   - ruby
+  - ruby
   - ruby-bundler
+  - ruby-bundler
+  - ruby-libvirt
+  - ruby-rdoc
   - scrot
   - seahorse
   - shellcheck
   - spotify
   - sshfs
+  - steam-fonts
   - sysprof
   - telegram-desktop
   - terminus-font
+  - terraform
   - tewisay-git
   - tig
   - tilix
   - tmate
   - tmux
+  - tmux-xpanes
   - tree
+  - vagrant
   - vertex-themes
   - vim
   - virt-manager
+  - visual-studio-code-bin 
   - wpscan
   - xclip
+  - yay
   - youtube-viewer
   - zsh

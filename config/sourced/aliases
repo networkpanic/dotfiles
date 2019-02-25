@@ -1,15 +1,16 @@
 alias coinstats="~/dotfiles/scripts/coinstats.sh"
 alias fs='fortune -as | cowsay -f small | lolcat'
+alias gotop='TERM=screen gotop'
 alias hosts="sudo $EDITOR /etc/hosts"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias lc="lolcat"
-alias ls="exa --git -l"
+alias ls="ls --color --classify --human-readable -l -X --group-directories-first"
 alias mirrup='sudo reflector -c de -f 5 --threads 5 --sort score --save /etc/pacman.d/mirrorlist'
 alias myip="curl ipinfo.io/ip"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
 alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
-alias zshreload="antigen reset && exec /usr/bin/zsh -i"
-alias gotop='TERM=screen gotop'
 alias srip='spotify-ripper --all-artists -b 320 -f "{album_artist}/{album}/{artist} - {track_name}.{ext}"  --large-cover-art -d ~/Music -l'
+alias yayre='yay -Syu --noconfirm && reboot'
+alias zshreload="antigen reset && exec /usr/bin/zsh -i"
