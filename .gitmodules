@@ -14,10 +14,6 @@
 	path = dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
 	branch = master
-[submodule "antigen"]
-	path = antigen
-	url = https://github.com/zsh-users/antigen.git
-	branch = master
 [submodule "config/tmux/plugins/tpm"]
 	path = config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
