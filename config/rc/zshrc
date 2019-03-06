@@ -26,6 +26,8 @@ antigen bundle djui/alias-tips
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle extract
+antigen bundle gantsign/zsh-plugins kompose
+antigen bundle gantsign/zsh-plugins kubeadm
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
@@ -38,6 +40,7 @@ antigen bundle kubectl
 antigen bundle lein
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle lukechilds/zsh-nvm
+antigen bundle mafredri/zsh-async
 antigen bundle man
 antigen bundle MichaelAquilina/zsh-emojis
 antigen bundle minikube
@@ -45,10 +48,15 @@ antigen bundle pip
 antigen bundle psprint/history-search-multi-word
 antigen bundle pyenv
 antigen bundle python
+antigen bundle rapgenic/zsh-git-complete-urls
 antigen bundle rupa/z
+antigen bundle sparsick/ansible-zsh
 antigen bundle sudo
 antigen bundle systemd
 antigen bundle thewtex/tmux-mem-cpu-load
+antigen bundle terraform
+antigen bundle vagrant
+antigen bundle vagrant-prompt
 antigen bundle tmux
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle virtualenv
@@ -63,13 +71,10 @@ antigen theme gnzh
 antigen apply
 
 
-
 if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
   script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
 fi
 
 cat  ~/dotfiles/motd.lol
 
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
-gpg-connect-agent updatestartuptty /bye
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
