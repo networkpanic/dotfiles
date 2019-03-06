@@ -1,10 +1,12 @@
 - pacman:
+  - ansible
   - aria2
   - asciinema
   - aurvote
   - bash-pipes
-  - catimg
+  - cava
   - ccze
+  - cmatrix
   - cowsay
   - ctop
   - curl
@@ -12,35 +14,42 @@
   - fortune-mod
   - fzy
   - gitflow-avh
-  - gotop
+  - gotop-bin
   - htop
   - httpie
-  - iotop
   - kubectl-bin
   - kubernetes-helm-bin
-  - libvirt
   - lolcat
   - mpd
-  - mtr
   - ncmpcpp
   - neofetch
+  - neovim
   - nnn
   - pigz
+  - pkgconf
   - ponysay
+  - powershell-bin
   - python-pyfiglet
+  - python-pywinrm
+  - python2-pywinrm
   - reflector
   - rsync
   - ruby
+  - ruby
   - ruby-bundler
-  - scrot
+  - ruby-bundler
+  - ruby-libvirt
+  - ruby-rdoc
+  - shellcheck
   - sshfs
   - terminus-font
+  - terraform
   - tewisay-git
   - tig
   - tmate
   - tmux
+  - tmux-xpanes
   - tree
   - vim
-  - xclip
+  - yay
   - zsh
-  - neovim
