@@ -2,7 +2,7 @@
 
 set -e
 
-DEFAULT_CONFIG_PREFIX="arch"
+DEFAULT_CONFIG_PREFIX=""
 CONFIG_SUFFIX=".conf.yaml"
 DOTBOT_DIR="dotbot"
 
