@@ -21,6 +21,7 @@ antigen bundle catimg
 antigen bundle changyuheng/fz
 antigen bundle command-not-found
 antigen bundle desyncr/auto-ls
+antigen bundle johanhaleby/kubetail
 antigen bundle dirhistory
 antigen bundle djui/alias-tips
 antigen bundle docker

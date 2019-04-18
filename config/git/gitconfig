@@ -1,7 +1,7 @@
 [user]
 	name = Martin Friedrich
 	email = mf@zeuz.io
-	signingkey = B2562BB1
+	signingkey = 9ABD34AB
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
@@ -13,7 +13,7 @@
 [init]
 	templatedir = ~/.git_template
 [commit]
-	gpgsign = false
+	gpgsign = true
 [diff]
 	tool = meld
 [difftool]
@@ -32,3 +32,5 @@
 	spellcheck = false
 [hooks]
 	global = ~/.githooks
+[merge] 
+	renamelimit = 10000000
