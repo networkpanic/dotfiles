@@ -53,6 +53,3 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule "themes/plata-theme"]
-	path = themes/plata-theme
-	url = git@gitlab.com:tista500/plata-theme.git
