@@ -8,6 +8,9 @@
 	pager = diff-so-fancy
 [color]
 	ui = auto
+   interactive = true
+   branch = true
+   status = true
 [http "https://gopkg.in"]
 	followRedirects = true
 [init]
@@ -15,35 +18,40 @@
 [commit]
 	gpgsign = true
 [diff]
-	tool = meld
-[difftool]
-	prompt = true
+  tool = vscode
+  compactionHeuristic = true
+  indentHeuristic = true
+  algorithm = patience
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 [gitflow "prefix"]
-	feature = feature-
-	release = release-
-	hotfix = hotfix-
-	support = support-
-	versiontag = v
+  feature = feature-
+  release = release-
+  hotfix = hotfix-
+  support = support-
+  versiontag = v
 [alias]
-	hist = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-	ignore = "!gi() { IFS=\",\"; curl -L -s \"https://www.gitignore.io/api/$*\" | tee .gitignore;}; gi"
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-	f = "!git ls-files | grep -i"
-	gr = grep -Ii
-	la = "!git config -l | grep alias | cut -c 7-"	
-   log-my = !git log --author $(git config user.email)
-   who = shortlog --summary --
-   whorank = shortlog --summary --numbered --no-merges
-   repacker = repack -a -d -f --depth=300 --window=300 --window-memory=1g
-   pruner = !"git prune --expire=now; git reflog expire --expire-unreachable=now --rewrite --all"
-   optimize = !git pruner; git repacker; git prune-packed
+  hist = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+  ignore = "!gi() { IFS=\",\"; curl -L -s \"https://www.gitignore.io/api/$*\" | tee .gitignore;}; gi"
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  f = "!git ls-files | grep -i"
+  gr = grep -Ii
+  la = "!git config -l | grep alias | cut -c 7-"	
+  log-my = !git log --author $(git config user.email)
+  who = shortlog --summary --
+  whorank = shortlog --summary --numbered --no-merges
+  repacker = repack -a -d -f --depth=300 --window=300 --window-memory=1g
+  pruner = !"git prune --expire=now; git reflog expire --expire-unreachable=now --rewrite --all"
 [cola]
-	spellcheck = false
+  spellcheck = false
 [hooks]
-	global = ~/.githooks
-[merge] 
-	renamelimit = 10000000
+  global = ~/.githooks
+[merge]
+  tool = vscode
+  conflictstyle = diff3
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
 [url "git@git.zeuz.io:"]
-	insteadOf = https://git.zeuz.io/
+  insteadOf = https://git.zeuz.io/
