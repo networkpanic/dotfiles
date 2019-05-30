@@ -45,3 +45,4 @@ __pycache__
 config/ranger/history
 config/ranger/bookmarks
 motd
+.vscode/settings.json
