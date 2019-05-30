@@ -38,6 +38,8 @@
     ~/scripts: scripts
     ~/.SpaceVim: vim/SpaceVim
     ~/.config/nvim: vim/SpaceVim
+    ~/.kodi/userdata/sources.xml: config/kodi/sources.xml
+    ~/.kodi/userdata/mediasources.xml: config/kodi/mediasources.xml
     ~/.tmux: config/tmux
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc
@@ -46,7 +48,7 @@
       relink: true
       path: vim/Vundle.vim
     ~/.config/Code/User/settings.json: config/vscode/settings.json
-    ~/.config/Code\ -\ Insiders//User/settings.json: config/vscode/settings.json      
+    ~/.config/Code\ -\ Insiders//User/settings.json: config/vscode/settings.json
     ~/.Xresources: config/Xresources
     ~/.zshrc: config/rc/zshrc
 
