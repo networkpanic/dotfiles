@@ -33,10 +33,12 @@
 	f = "!git ls-files | grep -i"
 	gr = grep -Ii
 	la = "!git config -l | grep alias | cut -c 7-"	
-    log-my = !git log --author $(git config user.email)
-    who = shortlog --summary --
-    whorank = shortlog --summary --numbered --no-merges
-    repacker = repack -a -d -f --depth=300 --window=300 --window-memory=1g
+   log-my = !git log --author $(git config user.email)
+   who = shortlog --summary --
+   whorank = shortlog --summary --numbered --no-merges
+   repacker = repack -a -d -f --depth=300 --window=300 --window-memory=1g
+   pruner = !"git prune --expire=now; git reflog expire --expire-unreachable=now --rewrite --all"
+   optimize = !git pruner; git repacker; git prune-packed
 [cola]
 	spellcheck = false
 [hooks]
