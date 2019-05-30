@@ -1,0 +1,5 @@
+# Files that are going to be encrypted
+config/vscode/settings.json filter=git-crypt diff=git-crypt
+
+# Making sure that .gitattributes is never encrypted. DON'T TOUCH THAT LINE AND ONE BELOW
+.gitattributes !filter !diff
