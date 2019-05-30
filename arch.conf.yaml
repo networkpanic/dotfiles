@@ -45,6 +45,8 @@
       force: true
       relink: true
       path: vim/Vundle.vim
+    ~/.config/Code/User/settings.json: config/vscode/settings.json
+    ~/.config/Code\ -\ Insiders//User/settings.json: config/vscode/settings.json      
     ~/.Xresources: config/Xresources
     ~/.zshrc: config/rc/zshrc
 
