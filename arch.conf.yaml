@@ -52,9 +52,6 @@
   - [git submodule update --init --remote, Updating submodules]
   - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
   - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
-  - command: ./fonts/install.sh
-    stdin: true
-    stdout: true
   - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch.packages.conf.yaml -d .
     stdin: true
     stdout: true
