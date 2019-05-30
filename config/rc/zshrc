@@ -27,7 +27,6 @@ antigen bundle djui/alias-tips
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle extract
-antigen bundle gantsign/zsh-plugins kompose
 antigen bundle gantsign/zsh-plugins kubeadm
 antigen bundle git
 antigen bundle git-extras
@@ -44,7 +43,6 @@ antigen bundle lukechilds/zsh-nvm
 antigen bundle mafredri/zsh-async
 antigen bundle man
 antigen bundle MichaelAquilina/zsh-emojis
-antigen bundle minikube
 antigen bundle pip
 antigen bundle psprint/history-search-multi-word
 antigen bundle pyenv
@@ -78,4 +76,4 @@ fi
 
 cat  ~/dotfiles/motd.lol
 
-export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+export SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
