@@ -46,7 +46,6 @@
   - kupfer
   - libvirt
   - lolcat
-  - materia-theme-git  
   - meld
   - mpd
   - mtr
@@ -62,6 +61,7 @@
   - peek
   - pigz
   - pkgconf
+  - plata-theme
   - ponysay
   - powershell-bin
   - powertop
@@ -83,7 +83,7 @@
   - scrot
   - seahorse
   - shellcheck
-  - spotify
+  - spotify-dev
   - sshfs
   - steam-fonts
   - sysprof
@@ -100,7 +100,8 @@
   - vagrant
   - vim
   - virt-manager
-  - visual-studio-code-bin 
+  - visual-studio-code-bin
+  - visual-studio-code-insiders
   - wpscan
   - xclip
   - yay
