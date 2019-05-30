@@ -6,10 +6,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
         branch = master
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/powerline/fonts.git
-        branch = master
 [submodule "dotbot-pacaur"]
 	path = dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
@@ -46,7 +42,7 @@
 	url = https://github.com/SpaceVim/SpaceVim.git
 [submodule "scripts"]
 	path = scripts
-	url = https://gitlab.com/npanic/scripts.git
+	url = https://gitlab.com/acidhunter/scripts.git
 [submodule "dotbot-vscode"]
 	path = dotbot-vscode
 	url = https://github.com/hujianxin/dotbot-vscode
