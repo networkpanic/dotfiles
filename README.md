@@ -17,15 +17,16 @@ At this moment LANG=EN_us.UTF-8 is required for dotbot-pacaur
 Installation
 -----------
 
- - clone the repo
- - cd into it "cd dotfiles"
- - install via ./install arch
+ - create a gpg key
+ - fork the dotfiles repo
+ - clone your fork in your home
+ - cd into it "cd ~/dotfiles"
+ - install via ./install arch/arch-headless/arch-wsl
 
 
 Todo
 -----------
 
- - gpg encrypted history-sync
  - better ssh config handling
  - add missing gnome extensions
 
