@@ -34,15 +34,9 @@
 	path = config/tmux/plugins/tmux-battery
 	url = https://git::@github.com/tmux-plugins/tmux-battery
 	branch = master
-[submodule "scripts/login-background"]
-	path = scripts/login-background
-	url = https://github.com/uttarayan21/login-background.git
 [submodule "vim/SpaceVim"]
 	path = vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
-[submodule "scripts"]
-	path = scripts
-	url = https://gitlab.com/acidhunter/scripts.git
 [submodule "dotbot-vscode"]
 	path = dotbot-vscode
 	url = https://github.com/hujianxin/dotbot-vscode
