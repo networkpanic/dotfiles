@@ -1,49 +1,51 @@
 [include]
-  path = ~/.gitconfig.d/*.config
-[user]
-	name = Martin Friedrich
-	email = mf@zeuz.io
-	signingkey = 9ABD34AB
-[core]
-	editor = vim
-	excludesfile = ~/.gitignore
-	pager = diff-so-fancy
+  path = ~/.gitconfig.d/alias.config
+  path = ~/.gitconfig.d/core.config
+  path = ~/.gitconfig.d/gitflow.config
+  path = ~/.gitconfig.d/user.config
+
+[hooks]
+  global = ~/.githooks
+  
+[gui]
+	pruneDuringFetch = true
+
 [color]
 	ui = auto
    interactive = true
    branch = true
    status = true
-[http "https://gopkg.in"]
-	followRedirects = true
+
 [init]
 	templatedir = ~/.git_template
+
 [commit]
 	gpgsign = true
+
+[fetch]
+	prune = true
+
+[merge]
+  tool = vscode
+  conflictstyle = diff3
+
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+
 [diff]
   tool = vscode
   compactionHeuristic = true
   indentHeuristic = true
   algorithm = patience
+
 [difftool "vscode"]
   cmd = code --wait --diff $LOCAL $REMOTE
-[gitflow "prefix"]
-  feature = feature-
-  release = release-
-  hotfix = hotfix-
-  support = support-
-  versiontag = v
+
+[http "https://gopkg.in"]
+	followRedirects = true
+
 [cola]
   spellcheck = false
-[hooks]
-  global = ~/.githooks
-[merge]
-  tool = vscode
-  conflictstyle = diff3
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
+
 [url "git@git.zeuz.io:"]
   insteadOf = https://git.zeuz.io/
-[fetch]
-	prune = true
-[gui]
-	pruneDuringFetch = true
