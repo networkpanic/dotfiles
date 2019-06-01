@@ -13,7 +13,7 @@
 
 
 - shell:
-#  - [git pull origin, Updating repo]
+  - [git pull origin, Updating repo]
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
@@ -35,7 +35,6 @@
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
-    ~/scripts: scripts
     ~/.SpaceVim: vim/SpaceVim
     ~/.config/nvim: vim/SpaceVim
     ~/.tmux: config/tmux
@@ -56,4 +55,5 @@
     stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
+  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
   - ["sudo chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
