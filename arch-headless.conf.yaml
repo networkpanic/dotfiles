@@ -28,6 +28,7 @@
     ~/.git_template: config/git/git_template
     ~/.githooks: config/git/git_template/hooks
     ~/.gitconfig: config/git/gitconfig
+    ~/.gitconfig.d: config/git/gitconfig.d
     ~/.gitignore: config/git/gitignore
     ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
     ~/.gnupg/gpg.conf: config/gnupg/gpg.conf

@@ -21,7 +21,6 @@
 
 dotbot
 
-https://github.com/qobilidop/dotbot-env
 https://github.com/sobolevn/dotbot-pip
 https://github.com/vbrandl/dotfiles
 https://github.com/magicmonty/dotfiles_dotbot
