@@ -62,7 +62,10 @@
     stdout: true
   - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode.packages.conf.yaml -d .
     stdin: true
-    stdout: true   
+    stdout: true
+  - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode-insiders.packages.conf.yaml -d .
+    stdin: true
+    stdout: true      
   - ["vim +PluginInstall +qall", "Installing nvim's plugins trough Vundle"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
   - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
