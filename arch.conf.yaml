@@ -36,7 +36,6 @@
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.ncmpcpp/config: config/ncmpcpp.conf
     ~/.ssh/config: config/ssh/config
-    ~/scripts: scripts
     ~/.SpaceVim: vim/SpaceVim
     ~/.config/nvim: vim/SpaceVim
     ~/.kodi/userdata/sources.xml: config/kodi/sources.xml
