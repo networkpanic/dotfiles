@@ -44,6 +44,7 @@ ipedrazas.kubernetes-snippets
 jaredkent.vsthemegenerator
 jasonn-porch.gitlab-mr
 jeroen-meijer.pubspec-assist
+johnpapa.vscode-peacock
 karigari.chat
 KnisterPeter.vscode-commitizen
 KnisterPeter.vscode-jira
@@ -54,6 +55,7 @@ marcostazi.VS-code-vagrantfile
 mauve.terraform
 mhutchie.git-graph
 monokai.theme-monokai-pro-vscode
+ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-vscode-remote.remote-containers
@@ -72,7 +74,6 @@ msjsdiag.debugger-for-chrome
 neverik.go-critic
 owenfarrell.vscode-vault
 p1c2u.docker-compose
-PeterJausovec.vscode-docker
 PKief.material-icon-theme
 redhat.vscode-yaml
 rrivera.vscode-gitlab-explorer
