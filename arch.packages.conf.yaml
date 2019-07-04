@@ -12,7 +12,6 @@
   - ccze
   - chkservice
   - cmatrix
-  - cointop
   - conky
   - corebird-non-streaming-git
   - cowsay
@@ -53,7 +52,6 @@
   - neofetch
   - neovim
   - nerd-fonts-complete
-  - netdiscover
   - nethogs
   - nnn
   - pamac-aur
@@ -75,9 +73,8 @@
   - retroarch
   - rsync
   - ruby
-  - ruby
   - ruby-bundler
-  - ruby-bundler
+  - ruby-rake
   - ruby-libvirt
   - ruby-rdoc
   - scrot
