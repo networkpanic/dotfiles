@@ -1,0 +1,64 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+  - '~'
+  - '~/.config'
+  - '~/.gnupg'
+  - '~/.vim'
+  - '~/.tmux'
+
+
+- shell:
+#  - [git pull origin, Updating repo]
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.antigen: antigen
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/rc/bashrc
+    ~/.config/cava: config/cava
+    ~/.config/htop: config/htop
+    ~/.config/neofetch: config/neofetch
+    ~/.config/ranger: config/ranger
+    ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
+    ~/.git_template: config/git/git_template
+    ~/.githooks: config/git/git_template/hooks
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitconfig.d: config/git/gitconfig.d
+    ~/.gitignore: config/git/gitignore
+    ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
+    ~/.gnupg/gpg.conf: config/gnupg/gpg.conf
+    ~/.mpd/mpd.conf: config/mpd/mpd.conf
+    ~/.ncmpcpp/config: config/ncmpcpp.conf
+    ~/.ssh/config: config/ssh/config
+    ~/.SpaceVim: vim/SpaceVim
+    ~/.config/nvim: vim/SpaceVim
+    ~/.tmux: config/tmux
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.vimrc: config/vimrc
+    ~/.vim/bundle/Vundle.vim:
+      force: true
+      relink: true
+      path: vim/Vundle.vim
+    ~/.Xresources: config/Xresources
+    ~/.zshrc: config/rc/zshrc
+
+- shell:
+  - [git submodule update --init --remote, Updating submodules]
+  - ["mkdir -p ~/.mpd/playlists", "Creating mpd directory"]
+  - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
+  - command: ./dotbot/bin/dotbot -p dotbot-brew/brew.py -c macos.packages.conf.yaml -d .
+    stdin: true
+    stdout: true
+  - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode.packages.conf.yaml -d .
+    stdin: true
+    stdout: true
+  - ["vim +PluginInstall +qall", "Installing vim's plugins trough Vundle"]
+  - ["nvim +PluginInstall +qall", "Installing nvim's plugins via spacevim"]
+  - ["gem install lolcommits", "Installing lolcommits (essential)"]
+  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
+  - ["sudo chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
