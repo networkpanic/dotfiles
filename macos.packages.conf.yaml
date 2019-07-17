@@ -38,8 +38,7 @@
   - tmux-xpanes
   - tree
   - vim
-
- - cask:
+- cask:
   - docker
   - vagrant
   - visual-studio-code
