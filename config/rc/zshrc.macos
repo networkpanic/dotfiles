@@ -1,0 +1,77 @@
+source ~/.antigen/antigen.zsh
+source ~/dotfiles/config/sourced/aliases
+source ~/dotfiles/config/sourced/functions
+source ~/dotfiles/config/sourced/exports
+
+
+#if [[ -v ZSH_PROF ]]; then
+#  zmodload zsh/zprof
+#fi
+# Load the oh-my-zsh's library.
+
+antigen use oh-my-zsh
+antigen bundle robbyrussell/oh-my-zsh lib/
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle ascii-soup/zsh-url-highlighter
+antigen bundle b4b4r07/emoji-cli
+antigen bundle bric3/nice-exit-code
+antigen bundle catimg
+antigen bundle changyuheng/fz
+antigen bundle command-not-found
+antigen bundle desyncr/auto-ls
+antigen bundle johanhaleby/kubetail
+antigen bundle dirhistory
+antigen bundle djui/alias-tips
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle extract
+antigen bundle gantsign/zsh-plugins kubeadm
+antigen bundle git
+antigen bundle git-extras
+antigen bundle git-flow
+antigen bundle gpg-agent
+antigen bundle greymd/tmux-xpanes
+antigen bundle horosgrisa/mysql-colorize
+antigen bundle httpie
+antigen bundle jreese/zsh-titles
+antigen bundle kubectl
+antigen bundle lein
+antigen bundle lukechilds/zsh-better-npm-completion
+antigen bundle lukechilds/zsh-nvm
+antigen bundle mafredri/zsh-async
+antigen bundle man
+antigen bundle MichaelAquilina/zsh-emojis
+antigen bundle pip
+antigen bundle psprint/history-search-multi-word
+antigen bundle pyenv
+antigen bundle python
+antigen bundle rapgenic/zsh-git-complete-urls
+antigen bundle rupa/z
+antigen bundle sparsick/ansible-zsh
+antigen bundle sudo
+antigen bundle thewtex/tmux-mem-cpu-load
+antigen bundle terraform
+antigen bundle vagrant
+antigen bundle vagrant-prompt
+antigen bundle tmux
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle virtualenv
+antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zdharma/zsh-diff-so-fancy
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zuxfoucault/colored-man-pages_mod
+antigen theme gnzh
+
+# Tell Antigen that you're done.
+antigen apply
+
+
+if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
+  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
+fi
+
+cat  ~/dotfiles/motd.lol
+
+export SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
