@@ -45,7 +45,7 @@
       relink: true
       path: vim/Vundle.vim
     ~/.Xresources: config/Xresources
-    ~/.zshrc: config/rc/zshrc
+    ~/.zshrc: config/rc/zshrc.macos
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
