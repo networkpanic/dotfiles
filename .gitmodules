@@ -10,37 +10,37 @@
 	path = .submodules/dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
 	branch = master
-[submodule "config/tmux/plugins/tpm"]
-	path = config/tmux/plugins/tpm
+[submodule ".submodules/tmux/plugins/tpm"]
+	path = .submodules/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 	branch = master
-[submodule "config/tmux/plugins/tmux-sensible"]
-	path = config/tmux/plugins/tmux-sensible
+[submodule ".submodules/tmux/plugins/tmux-sensible"]
+	path = .submodules/tmux/plugins/tmux-sensible
 	url = https://git::@github.com/tmux-plugins/tmux-sensible
 	branch = master
-[submodule "config/tmux/plugins/tmux-online-status"]
-	path = config/tmux/plugins/tmux-online-status
+[submodule ".submodules/tmux/plugins/tmux-online-status"]
+	path = .submodules/tmux/plugins/tmux-online-status
 	url = https://git::@github.com/tmux-plugins/tmux-online-status
 	branch = master
-[submodule "config/tmux/plugins/tmux-net-speed"]
-	path = config/tmux/plugins/tmux-net-speed
+[submodule ".submodules/tmux/plugins/tmux-net-speed"]
+	path = .submodules/tmux/plugins/tmux-net-speed
 	url = https://git::@github.com/tmux-plugins/tmux-net-speed
 	branch = master
-[submodule "config/tmux/plugins/tmux-cpu"]
-	path = config/tmux/plugins/tmux-cpu
+[submodule ".submodules/tmux/plugins/tmux-cpu"]
+	path = .submodules/tmux/plugins/tmux-cpu
 	url = https://git::@github.com/tmux-plugins/tmux-cpu
 	branch = master
-[submodule "config/tmux/plugins/tmux-battery"]
-	path = config/tmux/plugins/tmux-battery
+[submodule ".submodules/tmux/plugins/tmux-battery"]
+	path = .submodules/tmux/plugins/tmux-battery
 	url = https://git::@github.com/tmux-plugins/tmux-battery
 	branch = master
 [submodule ".submodules/vim/SpaceVim"]
 	path = .submodules/vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
-[submodule "antigen"]
+[submodule ".submodules/antigen"]
 	path = .submodules/antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule "dotbot-brew"]
+[submodule ".submodules/dotbot-brew"]
 	path = .submodules/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "ansible/plugins/modules/ansible-aur"]
