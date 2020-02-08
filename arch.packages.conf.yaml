@@ -45,6 +45,7 @@
   - kupfer
   - libvirt
   - lolcat
+  - python-whichcraft
   - meld
   - mpd
   - mtr
@@ -65,7 +66,6 @@
   - powertop
   - python-pyfiglet
   - python-pywinrm
-  - python2-pywinrm
   - qemu
   - qt5-styleplugins
   - qt5ct
@@ -97,10 +97,12 @@
   - vagrant
   - vim
   - virt-manager
-  - visual-studio-code-bin
   - visual-studio-code-insiders
   - wpscan
   - xclip
   - yay
   - youtube-viewer
   - zsh
+  - navi
+  - rofi
+  - cmake
