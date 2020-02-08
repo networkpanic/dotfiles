@@ -23,21 +23,22 @@
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
+    ~/.config/nvim: vim/SpaceVim
     ~/.config/ranger: config/ranger
     ~/.config/retroarch/retroarch.cfg: config/retroarch/retroarch.cfg
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.git_template: config/git/git_template
-    ~/.githooks: config/git/git_template/hooks
     ~/.gitconfig: config/git/gitconfig
     ~/.gitconfig.d: config/git/gitconfig.d
+    ~/.githooks: config/git/git_template/hooks
     ~/.gitignore: config/git/gitignore
     ~/.gnupg/gpg-agent.conf: config/gnupg/gpg-agent.conf
     ~/.gnupg/gpg.conf: config/gnupg/gpg.conf
     ~/.mpd/mpd.conf: config/mpd/mpd.conf
     ~/.ncmpcpp/config: config/ncmpcpp.conf
-    ~/.ssh/config: config/ssh/config
+    ~/.p10k.zsh: config/zsh/.p10k.zsh
     ~/.SpaceVim: vim/SpaceVim
-    ~/.config/nvim: vim/SpaceVim
+    ~/.ssh/config: config/ssh/config
     ~/.tmux: config/tmux
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc
