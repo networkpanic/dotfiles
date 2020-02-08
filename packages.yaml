@@ -1,0 +1,4 @@
+- hosts: all
+  roles:
+   - base
+   - gantsign.visual-studio-code-extensions

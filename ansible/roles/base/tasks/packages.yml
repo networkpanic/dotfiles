@@ -1,0 +1,5 @@
+- name: Install packages from the AUR
+  aur:
+    name: '{{ item }}'
+  with_items: '{{ packages.aur }}'
+  when: packages.aur is defined

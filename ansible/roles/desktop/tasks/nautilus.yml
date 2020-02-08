@@ -1,0 +1,9 @@
+- name: nautilus use list view
+  gsetting:
+    key: org.gnome.nautilus.preferences.default-folder-viewer
+    value: "'list-view'"
+
+- name: nautilus list view columns
+  gsetting:
+    key: org.gnome.nautilus.list-view.default-visible-columns
+    value: "['name', 'size', 'date_modified', 'permissions', 'owner', 'group']"

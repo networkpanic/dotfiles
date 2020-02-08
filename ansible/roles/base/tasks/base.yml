@@ -1,0 +1,24 @@
+---
+- name: install base
+  pacman:
+    name: 
+      - base
+      - base-devel
+      - linux
+      - linux-headers
+      - linux-firmware
+      - aria2
+      - curl
+      - htop
+      - httpie
+      - iotop
+      - jq
+      - less
+      - nmap
+      - openssh
+      - ripgrep
+      - rsync
+      - shellcheck
+      - usbutils
+      - which
+  become: true
