@@ -46,3 +46,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "ansible/plugins/modules/ansible-aur"]
+	path = ansible/plugins/modules/ansible-aur
+	url = https://github.com/kewlfft/ansible-aur.git

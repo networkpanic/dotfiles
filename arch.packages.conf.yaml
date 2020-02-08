@@ -32,7 +32,6 @@
   - gitflow-avh
   - gnome-mpv
   - gnome-session-properties
-  - gnome-shell-extension-installer
   - gotop-bin
   - hexchat
   - htop
@@ -87,7 +86,6 @@
   - telegram-desktop
   - terminus-font
   - terraform
-  - tewisay-git
   - tig
   - tilix
   - tmate
@@ -107,4 +105,3 @@
   - rofi
   - cmake
   - flameshot
-  
