@@ -1,15 +1,7 @@
-[submodule ".submodules/vim/Vundle.vim"]
-	path = .submodules/vim/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
-    branch = master
 [submodule ".submodules/dotbot"]
 	path = .submodules/dotbot
 	url = https://github.com/anishathalye/dotbot.git
     branch = master
-[submodule ".submodules/dotbot-pacaur"]
-	path = .submodules/dotbot-pacaur
-	url = https://github.com/ajlende/dotbot-pacaur
-	branch = master
 [submodule ".submodules/tmux/plugins/tpm"]
 	path = .submodules/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
@@ -40,9 +32,9 @@
 [submodule ".submodules/antigen"]
 	path = .submodules/antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule ".submodules/dotbot-brew"]
-	path = .submodules/dotbot-brew
-	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "ansible/plugins/modules/ansible-aur"]
 	path = ansible/plugins/modules/ansible-aur
 	url = https://github.com/kewlfft/ansible-aur.git
+[submodule ".submodules/vim/Vundle.vim"]
+	path = .submodules/vim/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
