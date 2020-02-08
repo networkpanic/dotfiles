@@ -17,7 +17,7 @@
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.antigen: antigen
+    ~/.antigen: .submodules/antigen
     ~/.bash_profile: config/bash_profile
     ~/.bashrc: config/rc/bashrc
     ~/.config/cava: config/cava
@@ -40,6 +40,7 @@
     ~/.SpaceVim: .submodules/vim/SpaceVim
     ~/.ssh/config: config/ssh/config
     ~/.tmux: config/tmux
+    ~/.tmux/plugins: .submodules/tmux/plugins
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vimrc
     ~/.vim/bundle/Vundle.vim:
