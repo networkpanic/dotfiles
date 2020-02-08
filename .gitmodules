@@ -1,13 +1,13 @@
-[submodule "vim/Vundle.vim"]
-	path = vim/Vundle.vim
+[submodule ".submodules/vim/Vundle.vim"]
+	path = .submodules/vim/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-        branch = master
-[submodule "dotbot"]
-	path = dotbot
+    branch = master
+[submodule ".submodules/dotbot"]
+	path = .submodules/dotbot
 	url = https://github.com/anishathalye/dotbot.git
-        branch = master
-[submodule "dotbot-pacaur"]
-	path = dotbot-pacaur
+    branch = master
+[submodule ".submodules/dotbot-pacaur"]
+	path = .submodules/dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
 	branch = master
 [submodule "config/tmux/plugins/tpm"]
@@ -34,17 +34,14 @@
 	path = config/tmux/plugins/tmux-battery
 	url = https://git::@github.com/tmux-plugins/tmux-battery
 	branch = master
-[submodule "vim/SpaceVim"]
-	path = vim/SpaceVim
+[submodule ".submodules/vim/SpaceVim"]
+	path = .submodules/vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
-[submodule "dotbot-vscode"]
-	path = dotbot-vscode
-	url = https://github.com/hujianxin/dotbot-vscode
 [submodule "antigen"]
-	path = antigen
+	path = .submodules/antigen
 	url = https://github.com/zsh-users/antigen.git
 [submodule "dotbot-brew"]
-	path = dotbot-brew
+	path = .submodules/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "ansible/plugins/modules/ansible-aur"]
 	path = ansible/plugins/modules/ansible-aur
