@@ -27,7 +27,7 @@
 
 [merge]
 	tool = Kaleidoscope
-  conflictstyle = diff3
+    conflictstyle = diff3
 
 [mergetool "vscode"]
   cmd = code --wait $MERGED
