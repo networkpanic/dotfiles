@@ -1,4 +1,4 @@
 #!/bin/sh
 ### lolcommits hook (begin) ###
-LANG="en_US.UTF-8" && PATH="/usr/bin:/usr/bin:$PATH" && if [ ! -d "$GIT_DIR/rebase-merge" ] && [ "$LOLCOMMITS_CAPTURE_DISABLED" != "true" ]; then lolcommits -a 5 -w 2 --fork --stealth --device /dev/v4l/by-id/usb-CN0VGCNHLOG008BCB70LA00_Integrated_Webcam_HD_200901010001-video-index0 --capture; fi
+LANG="en_US.UTF-8" && PATH="/usr/bin:/usr/bin:$PATH" && if [ ! -d "$GIT_DIR/rebase-merge" ] && [ "$LOLCOMMITS_CAPTURE_DISABLED" != "true" ]; then lolcommits -a 5 -w 2 --fork --stealth --capture; fi
 ###  lolcommits hook (end)  ###
