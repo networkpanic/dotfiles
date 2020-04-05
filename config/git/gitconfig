@@ -26,14 +26,14 @@
 	prune = true
 
 [merge]
-  tool = vscode
+	tool = Kaleidoscope
   conflictstyle = diff3
 
 [mergetool "vscode"]
   cmd = code --wait $MERGED
 
 [diff]
-  tool = vscode
+	tool = Kaleidoscope
   compactionHeuristic = true
   indentHeuristic = true
   algorithm = patience
@@ -54,3 +54,12 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false

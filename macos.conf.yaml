@@ -55,7 +55,8 @@
     stdin: true
     stdout: true
   - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode.packages.conf.yaml -d .
-    stdin: true
+    stdin: trueccccccklguckegkerjfevgifdgebbegterfjtceebiji
+    
     stdout: true
   - ["vim +PluginInstall +qall", "Installing vim's plugins trough Vundle"]
   - ["nvim +PluginInstall +qall", "Installing nvim's plugins via spacevim"]

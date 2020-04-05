@@ -68,16 +68,13 @@ antigen theme romkatv/powerlevel10k
 antigen apply
 
 
-if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
-  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
-fi
+#if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
+#  script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
+#fi
 
-cat  ~/dotfiles/motd.lol
+#cat  ~/dotfiles/motd.lol
 
 #export SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export LC_ALL=en_US.UTF-8
-
-
