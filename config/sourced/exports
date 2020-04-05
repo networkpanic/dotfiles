@@ -1,9 +1,18 @@
 export EDITOR='vim'
 export GPG_TTY=$(tty)
-export PATH=$HOME/.tfenv/bin:/opt/depot_tools:$HOME/go/bin:/home/npanic/kubernetes/client/bin:/opt/flutter/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=${HOME}/.krew/bin:$HOME/.tfenv/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
 export GOPATH=$HOME/go
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export TERMINAL=tilix
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8'
 export GO111MODULE=on
+export LC_ALL=en_US.UTF-8
+export LC_NUMERIC=en_US.UTF-8
+export LC_TIME=en_US.UTF-8
+export LC_COLLATE=en_US.UTF-8
+export LC_MONETARY=en_US.UTF-8
+export LC_MESSAGES=en_US.UTF-8
+
+# fix ansible on macos
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
