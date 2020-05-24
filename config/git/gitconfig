@@ -47,8 +47,6 @@
 [cola]
   spellcheck = false
 
-[url "git@git.zeuz.io:"]
-  insteadOf = https://git.zeuz.io/
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -63,3 +61,5 @@
 	prompt = false
 [mergetool]
 	prompt = false
+[url "git@git.zeuz.io:"]
+	insteadOf = https://git.zeuz.io/
