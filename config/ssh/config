@@ -7,11 +7,23 @@ Host *
     stricthostkeychecking no
     UseKeychain yes
     AddKeysToAgent yes
-       IdentityFile ~/.ssh/id_rsa
-   IdentityFile ~/.ssh/awx
+    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/awx
+    
+    ForwardX11Trusted yes
+    ForwardX11 yes
 Host *+*
     ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;/+/!{s/%%/@/;s/:/ -p /};s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/') PATH=.:\$PATH nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
     #ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') exec nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
     forwardagent yes
 Host aur.archlinux.org
     User aur
+Host 144.76.182.15
+    User root
+    UseKeychain yes
+
+Host 192.168.2.20
+    HostName 192.168.2.20
+
+Host 192.168.2.208
+    HostName 192.168.2.208
