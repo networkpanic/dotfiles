@@ -46,3 +46,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "submodules/zinit"]
+	path = submodules/zinit
+	url = https://github.com/zdharma/zinit.git
