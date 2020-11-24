@@ -1,4 +1,4 @@
-source ~/.antigen/antigen.zsh
+source ~/.zinit/bin/zinit.zsh
 source ~/dotfiles/config/sourced/aliases
 source ~/dotfiles/config/sourced/functions
 source ~/dotfiles/config/sourced/exports
@@ -81,5 +81,5 @@ antigen apply
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /Users/npanic/go/bin/bitcomplete bit
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit

@@ -17,7 +17,7 @@
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.antigen: antigen
+    ~/.zinit/bin: submodules/zinit
     ~/.bash_profile: config/bash_profile
     ~/.bashrc: config/rc/bashrc
     ~/.config/cava: config/cava
@@ -46,6 +46,7 @@
       path: vim/Vundle.vim
     ~/.Xresources: config/Xresources
     ~/.zshrc: config/rc/zshrc.macos
+    ~/.p10k.zsh: config/p10k/p10k.zsh
 
 - shell:
   - [git submodule update --init --remote, Updating submodules]
@@ -55,11 +56,9 @@
     stdin: true
     stdout: true
   - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode.packages.conf.yaml -d .
-    stdin: trueccccccklguckegkerjfevgifdgebbegterfjtceebiji
-    
+    stdin: true
     stdout: true
   - ["vim +PluginInstall +qall", "Installing vim's plugins trough Vundle"]
   - ["nvim +PluginInstall +qall", "Installing nvim's plugins via spacevim"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
-  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
-  - ["sudo chsh -s $(which zsh) $(whoami)", "chsh to zsh"]
+#  - ["pyfiglet -f fuzzy $(whoami) > ~/dotfiles/motd && touch ~/dotfiles/motd.lol", "Generate login banner"]
