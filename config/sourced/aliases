@@ -1,4 +1,3 @@
-alias coinstats="~/dotfiles/scripts/coinstats.sh"
 alias fs='fortune -as | cowsay -f small | lolcat'
 alias gotop='TERM=screen gotop'
 alias hosts="sudo $EDITOR /etc/hosts"
@@ -12,4 +11,3 @@ alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -
 alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
 alias srip='spotify-ripper --all-artists -b 320 -f "{album_artist}/{album}/{artist} - {track_name}.{ext}"  --large-cover-art -d ~/Music -l'
 alias yayre='yay -Syu --noconfirm && reboot'
-alias zshreload="antigen reset && exec /usr/bin/zsh -i"
