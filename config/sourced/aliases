@@ -7,7 +7,3 @@ alias mirrup='sudo reflector -c de -f 5 --threads 5 --sort score --save /etc/pac
 alias myip="curl ipinfo.io/ip"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
-alias shot="scrot -s ~/foo.png && xclip -selection clipboard -target image/png -i < ~/foo.png && rm -f ~/foo.png"
-alias spotify="/usr/bin/spotify --force-device-scale-factor=1.5"
-alias srip='spotify-ripper --all-artists -b 320 -f "{album_artist}/{album}/{artist} - {track_name}.{ext}"  --large-cover-art -d ~/Music -l'
-alias yayre='yay -Syu --noconfirm && reboot'
