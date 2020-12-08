@@ -1,5 +1,5 @@
 
-My dotfiles, Archlinux Only
+My dotfiles
 =================
 This is a repository of dotfiles, managed with  [Dotbot](https://github.com/anishathalye/dotbot).
 
@@ -12,24 +12,13 @@ The install script will remove existing config!
 
 Save it!
 
-At this moment LANG=EN_us.UTF-8 is required for dotbot-pacaur
-
 Installation
 -----------
 
- - create a gpg key
  - fork the dotfiles repo
  - clone your fork in your home
  - cd into it "cd ~/dotfiles"
- - install via ./install arch/arch-headless/arch-wsl
-
-
-Todo
------------
-
- - better ssh config handling
- - add missing gnome extensions
-
+ - install via ./install arch/macos
 
 Inspiration
 -----------

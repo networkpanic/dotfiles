@@ -45,8 +45,6 @@
       force: true
       relink: true
       path: vim/Vundle.vim
-    ~/.config/Code/User/settings.json: config/vscode/settings.json
-    ~/.config/Code\ -\ Insiders//User/settings.json: config/vscode/settings.json
     ~/.Xresources: config/Xresources
     ~/.zshrc: config/rc/zshrc
 
@@ -56,13 +54,7 @@
   - ["touch ~/.mpd/{database,log,pid,state,sticker.sql}", "Creating mpd files"]
   - command: ./dotbot/bin/dotbot -p dotbot-pacaur/pacaur.py -c arch.packages.conf.yaml -d .
     stdin: true
-    stdout: true
-  - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode.packages.conf.yaml -d .
-    stdin: true
-    stdout: true
-  - command: ./dotbot/bin/dotbot -p dotbot-vscode/vscode.py -c vscode-insiders.packages.conf.yaml -d .
-    stdin: true
-    stdout: true      
+    stdout: true   
   - ["vim +PluginInstall +qall", "Installing vim's plugins trough Vundle"]
   - ["nvim +PluginInstall +qall", "Installing nvim's plugins via spacevim"]
   - ["gem install lolcommits", "Installing lolcommits (essential)"]
