@@ -1,15 +1,11 @@
 [submodule "vim/Vundle.vim"]
 	path = vim/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-        branch = master
+    branch = master
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
-        branch = master
-[submodule "dotbot-pacaur"]
-	path = dotbot-pacaur
-	url = https://github.com/ajlende/dotbot-pacaur
-	branch = master
+    branch = master
 [submodule "config/tmux/plugins/tpm"]
 	path = config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
@@ -37,12 +33,6 @@
 [submodule "vim/SpaceVim"]
 	path = vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
-[submodule "dotbot-vscode"]
-	path = dotbot-vscode
-	url = https://github.com/hujianxin/dotbot-vscode
-[submodule "dotbot-brew"]
-	path = dotbot-brew
-	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "submodules/zinit"]
 	path = submodules/zinit
 	url = https://github.com/zdharma/zinit.git
