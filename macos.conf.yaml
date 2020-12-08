@@ -19,7 +19,6 @@
 - link:
     ~/.zinit/bin: submodules/zinit
     ~/.bash_profile: config/bash_profile
-    ~/.bashrc: config/rc/bashrc
     ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
@@ -45,7 +44,7 @@
       relink: true
       path: vim/Vundle.vim
     ~/.Xresources: config/Xresources
-    ~/.zshrc: config/rc/zshrc.macos
+    ~/.zshrc: config/rc/zshrc
     ~/.p10k.zsh: config/p10k/p10k.zsh
 
 - shell:

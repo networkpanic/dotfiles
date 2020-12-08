@@ -65,3 +65,5 @@
 	insteadOf = https://git.zeuz.io/
 [pull]
 	rebase = true
+[rerere]
+	enabled = 1
