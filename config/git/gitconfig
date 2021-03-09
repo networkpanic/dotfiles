@@ -20,7 +20,7 @@
 	templatedir = ~/.git_template
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 
 [fetch]
 	prune = true

@@ -35,10 +35,10 @@ fi
 
 # If You Come From Bash You Might Have To Change Your $PATH.
 #   export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH
-export PATH="$HOME/bin:/usr/local/bin:$PATH"
+#export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 # Homebrew Requires This.
-export PATH="/usr/local/sbin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
 
 
 # - - - - - - - - - - - - - - - - - - - -
@@ -355,3 +355,6 @@ if [ -f '/Users/npanic/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . 
 # fi
 # 
 # cat  ~/dotfiles/motd.lol
+export PATH="${HOME}/.pyenv/bin:${PATH}"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

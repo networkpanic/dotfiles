@@ -15,3 +15,11 @@ Host *+*
 
 Host aur.archlinux.org
     User aur
+
+Host 192.168.2.6
+    HostName 192.168.2.6
+    User npanic
+
+Host 157.90.30.139
+    HostName 157.90.30.139
+    User root
