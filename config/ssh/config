@@ -23,3 +23,6 @@ Host 192.168.2.6
 Host 157.90.30.139
     HostName 157.90.30.139
     User root
+
+Host 192.168.2.214
+    HostName 192.168.2.214

@@ -1,10 +1,11 @@
+alias bazel=bazelisk
 alias fs='fortune -as | cowsay -f small | lolcat'
 alias gotop='TERM=screen gotop'
 alias hosts="sudo $EDITOR /etc/hosts"
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias lc="lolcat"
 alias mirrup='sudo reflector -c de -f 5 --threads 5 --sort score --save /etc/pacman.d/mirrorlist'
 alias myip="curl ipinfo.io/ip"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias pipup="pip freeze --local | cut -d = -f 1  | xargs pip install -U"
-alias bazel=bazelisk
