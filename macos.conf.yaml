@@ -19,10 +19,8 @@
 - link:
     ~/.zinit/bin: submodules/zinit
     ~/.bash_profile: config/bash_profile
-    ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
-    ~/.config/ranger: config/ranger
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.git_template: config/git/git_template
     ~/.githooks: config/git/git_template/hooks
