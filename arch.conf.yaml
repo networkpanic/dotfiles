@@ -20,11 +20,8 @@
     ~/.antigen: antigen
     ~/.bash_profile: config/bash_profile
     ~/.bashrc: config/rc/bashrc
-    ~/.config/cava: config/cava
     ~/.config/htop: config/htop
     ~/.config/neofetch: config/neofetch
-    ~/.config/ranger: config/ranger
-    ~/.config/retroarch/retroarch.cfg: config/retroarch/retroarch.cfg
     ~/.davfs2/davfs2.conf: config/davfs2/davfs2.conf
     ~/.git_template: config/git/git_template
     ~/.githooks: config/git/git_template/hooks
