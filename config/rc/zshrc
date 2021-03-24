@@ -116,16 +116,21 @@ setopt menu_complete            # Do Not Autoselect The First Completion Entry.
 unsetopt flow_control           # Disable Start/Stop Characters In Shell Editor.
 
 # Zstyle.
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:options' auto-description '%d'
-zstyle ':completion:*:corrections' format ' %F{green}-- %d (errors: %e) --%f'
-zstyle ':completion:*:descriptions' format ' %F{yellow}-- %d --%f'
-zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
-zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
 zstyle ':completion:*:default' list-prompt '%S%M matches%s'
-zstyle ':completion:*' format ' %F{yellow}-- %d --%f'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' verbose yes
 zstyle ':completion::complete:*' use-cache on
@@ -204,6 +209,7 @@ zinit light-mode compile"handler" for \
     zinit-zsh/z-a-as-monitor \
     zinit-zsh/z-a-bin-gem-node \
     zinit-zsh/z-a-submods \
+    Aloxaf/fzf-tab \
     zdharma/declare-zsh
 
 
@@ -225,8 +231,7 @@ zinit wait lucid light-mode for \
       OMZ::plugins/git-auto-fetch/git-auto-fetch.plugin.zsh \
       OMZ::plugins/gcloud/gcloud.plugin.zsh \
   atinit"zicompinit; zicdreplay" \
-        zdharma/fast-syntax-highlighting \
-      OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \
+      zdharma/fast-syntax-highlighting \
       OMZ::plugins/command-not-found/command-not-found.plugin.zsh \
   atload"_zsh_autosuggest_start" \
       zsh-users/zsh-autosuggestions \
@@ -234,7 +239,6 @@ zinit wait lucid light-mode for \
       OMZ::plugins/docker/_docker \
       OMZ::plugins/composer/composer.plugin.zsh \
       OMZ::plugins/thefuck/thefuck.plugin.zsh \
-      htlsne/zplugin-rbenv \
       OMZ::plugins/pyenv/pyenv.plugin.zsh \
       nnao45/zsh-kubectl-completion
 
@@ -343,18 +347,8 @@ export CPPFLAGS="-I/usr/local/opt/readline/include"
 export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/npanic/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/npanic/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/npanic/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/npanic/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-
 # if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 #   script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
 # fi
 # 
 # cat  ~/dotfiles/motd.lol
-export PATH="${HOME}/.pyenv/bin:${PATH}"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
