@@ -230,6 +230,7 @@ zinit wait lucid light-mode for \
       OMZ::lib/termsupport.zsh \
       OMZ::plugins/git-auto-fetch/git-auto-fetch.plugin.zsh \
       OMZ::plugins/gcloud/gcloud.plugin.zsh \
+      zdharma/history-search-multi-word \
   atinit"zicompinit; zicdreplay" \
       zdharma/fast-syntax-highlighting \
       OMZ::plugins/command-not-found/command-not-found.plugin.zsh \
