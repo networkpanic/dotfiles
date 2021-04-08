@@ -209,7 +209,6 @@ zinit light-mode compile"handler" for \
     zinit-zsh/z-a-as-monitor \
     zinit-zsh/z-a-bin-gem-node \
     zinit-zsh/z-a-submods \
-    Aloxaf/fzf-tab \
     zdharma/declare-zsh
 
 
@@ -222,7 +221,7 @@ zinit wait lucid light-mode for \
       OMZ::lib/completion.zsh \
       OMZ::lib/functions.zsh \
       OMZ::lib/diagnostics.zsh \
-      OMZ::lib/git.zsh \
+      OMZ::lib/git.zsh  \
       OMZ::lib/grep.zsh \
       OMZ::lib/key-bindings.zsh \
       OMZ::lib/misc.zsh \
@@ -231,6 +230,11 @@ zinit wait lucid light-mode for \
       OMZ::plugins/git-auto-fetch/git-auto-fetch.plugin.zsh \
       OMZ::plugins/gcloud/gcloud.plugin.zsh \
       zdharma/history-search-multi-word \
+      djui/alias-tips \
+      Dbz/kube-aliases \
+      @larkery/zsh-histdb \
+      b0o/zfzf \
+      Aloxaf/fzf-tab \
   atinit"zicompinit; zicdreplay" \
       zdharma/fast-syntax-highlighting \
       OMZ::plugins/command-not-found/command-not-found.plugin.zsh \
@@ -238,8 +242,6 @@ zinit wait lucid light-mode for \
       zsh-users/zsh-autosuggestions \
   as"completion" \
       OMZ::plugins/docker/_docker \
-      OMZ::plugins/composer/composer.plugin.zsh \
-      OMZ::plugins/thefuck/thefuck.plugin.zsh \
       OMZ::plugins/pyenv/pyenv.plugin.zsh \
       nnao45/zsh-kubectl-completion
 
