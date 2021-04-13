@@ -18,6 +18,7 @@
 
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = main
 
 [commit]
 	gpgsign = false
