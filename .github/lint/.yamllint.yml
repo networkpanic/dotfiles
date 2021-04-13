@@ -33,3 +33,10 @@ rules:
   truthy:
     level: warning
     allowed-values: ["true", "false", "on"]
+
+extends: default
+
+ignore: |
+  submodules/
+  vim/
+  config/tmux
