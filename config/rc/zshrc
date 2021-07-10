@@ -242,7 +242,6 @@ zinit wait lucid light-mode for \
       zsh-users/zsh-autosuggestions \
   as"completion" \
       OMZ::plugins/docker/_docker \
-      OMZ::plugins/pyenv/pyenv.plugin.zsh \
       nnao45/zsh-kubectl-completion
 
 

@@ -1,6 +1,6 @@
 export EDITOR='vim'
 # export GPG_TTY=$(tty)
-export PATH=${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/.improbable/imp-tool/subscriptions/:/usr/local/sbin:${HOME}/.krew/bin:$HOME/.tfenv/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=$PYENV_ROOT/bin:${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/.improbable/imp-tool/subscriptions/:/usr/local/sbin:${HOME}/.krew/bin:$HOME/.tfenv/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
 export GOPATH=$HOME/go
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export TERMINAL=tilix
@@ -13,6 +13,8 @@ export LC_TIME=en_US.UTF-8
 export LC_COLLATE=en_US.UTF-8
 export LC_MONETARY=en_US.UTF-8
 export LC_MESSAGES=en_US.UTF-8
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 # fix ansible on macos
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
