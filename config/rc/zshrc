@@ -349,6 +349,7 @@ export CPPFLAGS="-I/usr/local/opt/readline/include"
 export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
 
+#TODO: lolcat costs too much and has its ruby dependency hell, need to find a replacement
 # if [[ $(find ~/dotfiles/motd.lol -mmin +2 -print) ]]; then
 #   script -q -c "lolcat --spread 0.8 -F 0.4 ~/dotfiles/motd" > ~/dotfiles/motd.lol && rm typescript
 # fi

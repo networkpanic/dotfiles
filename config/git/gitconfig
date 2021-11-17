@@ -39,6 +39,7 @@
     indentHeuristic = true
     algorithm = patience
 
+#TODO: template diff tool
 [difftool "vscode"]
     cmd = code --wait --diff --new-window $LOCAL $REMOTE
 	prompt = false

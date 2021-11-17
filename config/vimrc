@@ -1,3 +1,5 @@
+#TODO: rewrite or drop in favour of spacevim&neovim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
