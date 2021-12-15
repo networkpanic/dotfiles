@@ -170,7 +170,7 @@ __ZINIT="${ZDOTDIR:-$HOME}/.zinit/bin/zinit.zsh"
 if [[ ! -f "$__ZINIT" ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.zinit/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
@@ -205,11 +205,11 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Load a few important annexes, without Turbo (this is currently required for annexes)
 zinit light-mode compile"handler" for \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-bin-gem-node \
-    zinit-zsh/z-a-submods \
-    zdharma/declare-zsh
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-readurl \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-submods \
+    zdharma-continuum/declare-zsh
 
 
 # - - - - - - - - - - - - - - - - - - - -
@@ -229,14 +229,14 @@ zinit wait lucid light-mode for \
       OMZ::lib/termsupport.zsh \
       OMZ::plugins/git-auto-fetch/git-auto-fetch.plugin.zsh \
       OMZ::plugins/gcloud/gcloud.plugin.zsh \
-      zdharma/history-search-multi-word \
+      zdharma-continuum//history-search-multi-word \
       djui/alias-tips \
       Dbz/kube-aliases \
       @larkery/zsh-histdb \
       b0o/zfzf \
       Aloxaf/fzf-tab \
   atinit"zicompinit; zicdreplay" \
-      zdharma/fast-syntax-highlighting \
+      zdharma-continuum//fast-syntax-highlighting \
       OMZ::plugins/command-not-found/command-not-found.plugin.zsh \
   atload"_zsh_autosuggest_start" \
       zsh-users/zsh-autosuggestions \
@@ -265,7 +265,7 @@ zinit load zsh-users/zsh-completions
 # zinit load zdharma/null
 
 # Semi-graphical .zshrc editor for zinit commands
-zinit load zdharma/zui
+zinit load zdharma-continuum//zui
 
 
 # - - - - - - - - - - - - - - - - - - - -
@@ -357,3 +357,4 @@ export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
     source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
     source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+eval "$(pyenv init -)"
