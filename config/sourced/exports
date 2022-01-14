@@ -1,6 +1,6 @@
 export EDITOR='vim'
 # export GPG_TTY=$(tty)
-export PATH=$PYENV_ROOT/bin:${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/.improbable/imp-tool/subscriptions/:/usr/local/sbin:${HOME}/.krew/bin:$HOME/.tfenv/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PYENV_ROOT/bin:/opt/homebrew/bin:/usr/local/bin:${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/.improbable/imp-tool/subscriptions/:/usr/local/sbin:${HOME}/.krew/bin:$HOME/.tfenv/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
 export GOPATH=$HOME/go
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export TERMINAL=tilix
