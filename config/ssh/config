@@ -26,3 +26,7 @@ Host 157.90.30.139
 
 Host 192.168.2.214
     HostName 192.168.2.214
+
+Host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/id_npanic
