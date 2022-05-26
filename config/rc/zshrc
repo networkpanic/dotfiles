@@ -13,9 +13,9 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     setopt xtrace prompt_subst
 fi
 
-source ~/dotfiles/config/sourced/aliases
-source ~/dotfiles/config/sourced/functions
-source ~/dotfiles/config/sourced/exports
+source "$HOME/.dotfiles/config/sourced/aliases"
+source "$HOME/.dotfiles/config/sourced/functions"
+source "$HOME/.dotfiles/config/sourced/exports"
 
 # - - - - - - - - - - - - - - - - - - - -
 # Instant Prompt
@@ -49,8 +49,8 @@ fi
 export XDG_CONFIG_HOME="$HOME/.config"
 export UPDATE_INTERVAL=15
 
-export DOTFILES="$HOME/dotfiles"
-export ZSH="$HOME/dotfiles/zsh"
+export DOTFILES="$HOME/.dotfiles"
+export ZSH="$HOME/.dotfiles/zsh"
 
 export CACHEDIR="$HOME/.local/share"
 [[ -d "$CACHEDIR" ]] || mkdir -p "$CACHEDIR"
